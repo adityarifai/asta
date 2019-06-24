@@ -9,8 +9,8 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <!-- Favicon icon -->
-    <link rel="icon" type="image/png" sizes="16x16" href="{{asset('adminbite/assets/images/favicon.png')}}">
-    <title>AdminBite admin Template - The Ultimate Multipurpose admin template</title>
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ asset('regna/astafile/ASTAMULTIMEDIATAMA_FIX.ico')}}">
+    <title>Register - Asta</title>
     <!-- Custom CSS -->
     <link href="{{asset('adminbite/dist/css/style.min.css')}}" rel="stylesheet">
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
