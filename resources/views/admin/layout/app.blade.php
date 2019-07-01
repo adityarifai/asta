@@ -210,14 +210,14 @@
                                                         </div>
                                                         <div class="user-content hide-menu m-t-10">
                                                             <h5 class="m-b-10 user-name font-medium">Administrator</h5>
-                                                            <a href="javascript:void(0)" class="btn btn-circle btn-sm m-r-5" id="Userdd" role="button" data-toggle="dropdown" aria-haspopup="true"
+                                                            <!-- <a href="javascript:void(0)" class="btn btn-circle btn-sm m-r-5" id="Userdd" role="button" data-toggle="dropdown" aria-haspopup="true"
                                                             aria-expanded="false">
                                                             <i class="ti-settings"></i>
+                                                        </a> -->
+                                                        <a href="{{url('/')}}" title="Home" class="btn btn-circle btn-sm">
+                                                            <i class="fas fa-home"></i>
                                                         </a>
-                                                        <a href="javascript:void(0)" title="Logout" class="btn btn-circle btn-sm">
-                                                            <i class="ti-power-off"></i>
-                                                        </a>
-                                                        <div class="dropdown-menu animated flipInY" aria-labelledby="Userdd">
+                                                        <!-- <div class="dropdown-menu animated flipInY" aria-labelledby="Userdd">
                                                             <a class="dropdown-item" href="javascript:void(0)">
                                                                 <i class="ti-user m-r-5 m-l-5"></i> My Profile</a>
                                                                 <a class="dropdown-item" href="javascript:void(0)">
@@ -232,7 +232,7 @@
                                                                                 <i class="fa fa-power-off m-r-5 m-l-5"></i> Logout</a>
                                                                             </div>
                                                                         </div>
-                                                                    </div>
+                                                                    </div> -->
                                                                     <!-- End User Profile-->
                                                                 </li>
                                                                 <!-- User Profile-->
@@ -263,6 +263,8 @@
                                                                 <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
                                                             </li>
                                                         </ul>
+                                                        @csrf
+                                                        </form>
                                                     </nav>
                                                     <!-- End Sidebar navigation -->
                                                 </div>

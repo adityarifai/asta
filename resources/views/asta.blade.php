@@ -277,7 +277,7 @@
               Ticket Travel &amp; Reservations 
             </div>
           </div>
-          <div class="homepage-offerings-menu col-md-6" onclick="window.location.href='#';">
+          <div class="homepage-offerings-menu col-md-6" onclick="window.location.href='{{route('layanan')}}';">
             <div class="homepage-offerings-menu-title">Our Services</div>
             <div class="homepage-offerings-menu-tagline">
               Development &amp; Technology <i class="fa fa-angle-right" aria-hidden="true"></i>

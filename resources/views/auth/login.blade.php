@@ -106,14 +106,14 @@
                                                     <h4 class="modal-title text-danger" id="mySmallModalLabel">Maaf</h4>
                                                     <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
                                                 </div>
-                                                <div class="modal-body"> Saat ini Register sedang dinonaktifkan.</div>
+                                                <div class="modal-body"> Saat ini Register sedang dinonaktifkan. Untuk informasi lebih lanjut silahkan hubungi <b>admin</b> pada halaman utama. Terima Kasih 🙏</div>
                                             </div>
                                             <!-- /.modal-content -->
                                         </div>
                                         <!-- /.modal-dialog -->
                                     </div>
                                     <div class="col-sm-12 text-center">
-                                        Don't have an account? <a href="#" data-toggle="modal" data-target=".bs-example-modal-sm" class="text-info m-l-5" id="sa-title"><b>Sign Up</b></a>
+                                        Don't have an account? <a href="#" data-toggle="modal" data-target=".bs-example-modal-sm" class="text-info m-l-5" id="sa-title"><b>Sign Up</b></a> / <a href="{{url('/')}}" class="text-info m-l-5" id="sa-title"> Back</a>
                                     </div>
                                 </div>
                             </form>
@@ -132,7 +132,7 @@
                             <!-- email -->
                             <div class="form-group row">
                                 <div class="col-12">
-                                    <input class="form-control form-control-lg" type="email" required="" placeholder="Username">
+                                    <input class="form-control form-control-lg" type="email" required="" placeholder="Email">
                                 </div>
                             </div>
                             <!-- pwd -->

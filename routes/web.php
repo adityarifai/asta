@@ -14,8 +14,10 @@
 Route::get('/', function () {
     return view('asta');
 });
-
+Route::get('services', 'HomeController@layanan')->name('layanan');
 
 Auth::routes();
-Route::get('admin', 'AdminController@beranda')->name('beranda');
 
+Route::middleware('auth')->group(function() {
+	Route::get('admin', 'AdminController@beranda')->name('beranda');
+});
