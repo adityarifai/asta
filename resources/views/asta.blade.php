@@ -393,7 +393,7 @@
               <div class="box">
                 <div class="icon"><a href=""><i class="fas fa-box-open"></i></a></div>
                 <h4 class="title"><a href="">Product Launching</a></h4>
-                <p class="description">Launching a new product can be an exciting time for any company.</p>
+                <p class="description">Launching a new product can be an exciting time for any company</p>
               </div>
             </div>
 

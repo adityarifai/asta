@@ -49,14 +49,10 @@
         <header class="topbar">
             <nav class="navbar top-navbar navbar-expand-md navbar-dark">
                 <div class="navbar-header">
-                    <!-- This is for the sidebar toggle which is visible on mobile only -->
-                    <a class="nav-toggler waves-effect waves-light d-block d-md-none" href="javascript:void(0)">
-                        <i class="ti-menu ti-close"></i>
-                    </a>
                     <!-- ============================================================== -->
                     <!-- Logo -->
                     <!-- ============================================================== -->
-                    <a class="navbar-brand" href="index.html">
+                    <a class="navbar-brand" href="#">
                         <!-- Logo icon -->
                         <b class="logo-icon">
                             <!--You can put here icon as well // <i class="wi wi-sunset"></i> //-->
@@ -69,9 +65,9 @@
                         <!-- Logo text -->
                         <span class="logo-text">
                             <!-- dark Logo text -->
-                            <img src="../../assets/images/logo-text.png" alt="Services" class="dark-logo" />
+                            <img src="{{ asset('regna/astafile/handshake.png')}}" style="width: 60%; height: 60%;" alt="Services" class="dark-logo" />
                             <!-- Light Logo text -->
-                            <img src="../../assets/images/logo-light-text.png" alt="Services" class="light-logo" />
+                            <img src="{{ asset('regna/astafile/handshake.png')}}" style="width: 60%; height: 60%;" alt="Services" class="light-logo" />
                         </span>
                     </a>
                     <!-- ============================================================== -->
@@ -95,9 +91,7 @@
                 <ul class="navbar-nav float-left mr-auto">
                     <li class="nav-item d-none d-md-block">
                         <a class="nav-link waves-effect waves-light">
-                            <marquee width="70%" direction="left" behavior="slide">
-                                Asta Multimedia Tama - Our Services
-                            </marquee>
+                            Asta Multimedia Tama - <b>Our Services</b>
                         </a>
                     </li>
                 </ul>
@@ -105,6 +99,14 @@
                 <!-- Right side toggle and nav items -->
                 <!-- ============================================================== -->
                 <ul class="navbar-nav float-right">
+                    <li class="nav-item">
+                        <a class="nav-link dropdown-toggle text-muted waves-effect waves-dark pro-pic font-20" href="#">Services
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link dropdown-toggle text-muted waves-effect waves-dark pro-pic font-20" href="{{route('fortofolio')}}">Portofolio
+                        </a>
+                    </li>
                     <li class="nav-item">
                         <a class="nav-link dropdown-toggle text-muted waves-effect waves-dark pro-pic font-20" href="{{url('/')}}">Home
                         </a>
@@ -133,7 +135,7 @@
         <div class="page-breadcrumb">
             <div class="row">
                 <div class="col-5 align-self-center">
-                    <h4 class="page-title">Gallery Page</h4>
+                    <h4 class="page-title">Services Page</h4>
                     <div class="d-flex align-items-center">
 
                     </div>
@@ -160,206 +162,104 @@
         <!-- ============================================================== -->
         <div class="container-fluid">
             <div class="row el-element-overlay">
-                <div class="col-lg-3 col-md-6">
+                <div class="col-lg-4 col-md-6">
                     <div class="card">
                         <div class="el-card-item">
-                            <div class="el-card-avatar el-overlay-1"> <img src="{{asset('adminbite/assets/images/big/img1.jpg')}}" alt="user" />
+                            <div class="el-card-avatar el-overlay-1"> <img src="{{asset('regna/astafile/kegiatan/a.jpg')}}" alt="user" />
                                 <div class="el-overlay">
                                     <ul class="list-style-none el-info">
-                                        <li class="el-item"><a class="btn default btn-outline image-popup-vertical-fit el-link" href="{{asset('adminbite/assets/images/big/img1.jpg')}}"><i class="sl-icon-magnifier"></i></a></li>
+                                        <li class="el-item"><a class="btn default btn-outline image-popup-vertical-fit el-link" href="{{asset('regna/astafile/kegiatan/a.jpg')}}"><i class="sl-icon-magnifier"></i></a></li>
                                         <li class="el-item"><a class="btn default btn-outline el-link" href="javascript:void(0);"><i class="sl-icon-link"></i></a></li>
                                     </ul>
                                 </div>
                             </div>
                             <div class="el-card-content">
-                                <h4 class="m-b-0">Project title</h4> <span class="text-muted">subtitle of project</span>
+                                <h4 style="padding-bottom: 4px;" class="m-b-0">Mice</h4> <span style="color: #595959;">Organizing Meeting, Incentive, Convention and Exhibition<br> <br> </span>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6">
+                <div class="col-lg-4 col-md-6">
                     <div class="card">
                         <div class="el-card-item">
-                            <div class="el-card-avatar el-overlay-1"> <img src="{{asset('adminbite/assets/images/big/img2.jpg')}}" alt="user" />
+                            <div class="el-card-avatar el-overlay-1"> <img src="{{asset('regna/astafile/kegiatan/b.jpg')}}" alt="user" />
                                 <div class="el-overlay">
                                     <ul class="list-style-none el-info">
-                                        <li class="el-item"><a class="btn default btn-outline image-popup-vertical-fit el-link" href="{{asset('adminbite/assets/images/big/img2.jpg')}}"><i class="sl-icon-magnifier"></i></a></li>
+                                        <li class="el-item"><a class="btn default btn-outline image-popup-vertical-fit el-link" href="{{asset('regna/astafile/kegiatan/b.jpg')}}"><i class="sl-icon-magnifier"></i></a></li>
                                         <li class="el-item"><a class="btn default btn-outline el-link" href="javascript:void(0);"><i class="sl-icon-link"></i></a></li>
                                     </ul>
                                 </div>
                             </div>
                             <div class="el-card-content">
-                                <h4 class="m-b-0">Project title</h4> <span class="text-muted">subtitle of project</span>
+                                <h4 style="padding-bottom: 4px;" class="m-b-0">Travel</h4> <span style="color: #595959;">Outbond - Travel Ecotourism and Adventure<br> <br> </span>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6">
+                <div class="col-lg-4 col-md-6">
                     <div class="card">
                         <div class="el-card-item">
-                            <div class="el-card-avatar el-overlay-1"> <img src="{{asset('adminbite/assets/images/big/img3.jpg')}}" alt="user" />
+                            <div class="el-card-avatar el-overlay-1"> <img src="{{asset('regna/astafile/kegiatan/c.jpg')}}" alt="user" />
                                 <div class="el-overlay">
                                     <ul class="list-style-none el-info">
-                                        <li class="el-item"><a class="btn default btn-outline image-popup-vertical-fit el-link" href="{{asset('adminbite/assets/images/big/img3.jpg')}}"><i class="sl-icon-magnifier"></i></a></li>
+                                        <li class="el-item"><a class="btn default btn-outline image-popup-vertical-fit el-link" href="{{asset('regna/astafile/kegiatan/c.jpg')}}"><i class="sl-icon-magnifier"></i></a></li>
                                         <li class="el-item"><a class="btn default btn-outline el-link" href="javascript:void(0);"><i class="sl-icon-link"></i></a></li>
                                     </ul>
                                 </div>
                             </div>
                             <div class="el-card-content">
-                                <h4 class="m-b-0">Project title</h4> <span class="text-muted">subtitle of project</span>
+                                <h4 style="padding-bottom: 4px;" class="m-b-0">Product Launching</h4> <span style="color: #595959;">Launching a new product can be an exciting time for any company</span>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6">
+                <div class="col-lg-4 col-md-6">
                     <div class="card">
                         <div class="el-card-item">
-                            <div class="el-card-avatar el-overlay-1"> <img src="{{asset('adminbite/assets/images/big/img4.jpg')}}" alt="user" />
+                            <div class="el-card-avatar el-overlay-1"> <img src="{{asset('regna/astafile/kegiatan/d.jpg')}}" alt="user" />
                                 <div class="el-overlay">
                                     <ul class="list-style-none el-info">
-                                        <li class="el-item"><a class="btn default btn-outline image-popup-vertical-fit el-link" href="{{asset('adminbite/assets/images/big/img4.jpg')}}"><i class="sl-icon-magnifier"></i></a></li>
+                                        <li class="el-item"><a class="btn default btn-outline image-popup-vertical-fit el-link" href="{{asset('regna/astafile/kegiatan/d.jpg')}}"><i class="sl-icon-magnifier"></i></a></li>
                                         <li class="el-item"><a class="btn default btn-outline el-link" href="javascript:void(0);"><i class="sl-icon-link"></i></a></li>
                                     </ul>
                                 </div>
                             </div>
                             <div class="el-card-content">
-                                <h4 class="m-b-0">Project title</h4> <span class="text-muted">subtitle of project</span>
+                                <h4 style="padding-bottom: 4px;" class="m-b-0">Multimedia</h4> <span style="color: #595959;">Record, Photograph, Film, Graphic Design and Printing<br> <br> <br></span>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6">
+                <div class="col-lg-4 col-md-6">
                     <div class="card">
                         <div class="el-card-item">
-                            <div class="el-card-avatar el-overlay-1"> <img src="{{asset('adminbite/assets/images/big/img3.jpg')}}" alt="user" />
+                            <div class="el-card-avatar el-overlay-1"> <img src="{{asset('regna/astafile/kegiatan/e.jpg')}}" alt="user" />
                                 <div class="el-overlay">
                                     <ul class="list-style-none el-info">
-                                        <li class="el-item"><a class="btn default btn-outline image-popup-vertical-fit el-link" href="{{asset('adminbite/assets/images/big/img3.jpg')}}"><i class="sl-icon-magnifier"></i></a></li>
+                                        <li class="el-item"><a class="btn default btn-outline image-popup-vertical-fit el-link" href="{{asset('regna/astafile/kegiatan/e.jpg')}}"><i class="sl-icon-magnifier"></i></a></li>
                                         <li class="el-item"><a class="btn default btn-outline el-link" href="javascript:void(0);"><i class="sl-icon-link"></i></a></li>
                                     </ul>
                                 </div>
                             </div>
                             <div class="el-card-content">
-                                <h4 class="m-b-0">Project title</h4> <span class="text-muted">subtitle of project</span>
+                                <h4 style="padding-bottom: 4px;" class="m-b-0">IT Solution</h4> <span style="color: #595959;">IT Solution and Multimedia Communication<br> <br> <br> </span>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6">
+                <div class="col-lg-4 col-md-6">
                     <div class="card">
                         <div class="el-card-item">
-                            <div class="el-card-avatar el-overlay-1"> <img src="{{asset('adminbite/assets/images/big/img5.jpg')}}" alt="user" />
+                            <div class="el-card-avatar el-overlay-1"> <img src="{{asset('regna/astafile/kegiatan/f.jpg')}}" alt="user" />
                                 <div class="el-overlay">
                                     <ul class="list-style-none el-info">
-                                        <li class="el-item"><a class="btn default btn-outline image-popup-vertical-fit el-link" href="{{asset('adminbite/assets/images/big/img5.jpg')}}"><i class="sl-icon-magnifier"></i></a></li>
+                                        <li class="el-item"><a class="btn default btn-outline image-popup-vertical-fit el-link" href="{{asset('regna/astafile/kegiatan/f.jpg')}}"><i class="sl-icon-magnifier"></i></a></li>
                                         <li class="el-item"><a class="btn default btn-outline el-link" href="javascript:void(0);"><i class="sl-icon-link"></i></a></li>
                                     </ul>
                                 </div>
                             </div>
                             <div class="el-card-content">
-                                <h4 class="m-b-0">Project title</h4> <span class="text-muted">subtitle of project</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <div class="card">
-                        <div class="el-card-item">
-                            <div class="el-card-avatar el-overlay-1"> <img src="{{asset('adminbite/assets/images/big/img6.jpg')}}" alt="user" />
-                                <div class="el-overlay">
-                                    <ul class="list-style-none el-info">
-                                        <li class="el-item"><a class="btn default btn-outline image-popup-vertical-fit el-link" href="{{asset('adminbite/assets/images/big/img6.jpg')}}"><i class="sl-icon-magnifier"></i></a></li>
-                                        <li class="el-item"><a class="btn default btn-outline el-link" href="javascript:void(0);"><i class="sl-icon-link"></i></a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="el-card-content">
-                                <h4 class="m-b-0">Project title</h4> <span class="text-muted">subtitle of project</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <div class="card">
-                        <div class="el-card-item">
-                            <div class="el-card-avatar el-overlay-1"> <img src="{{asset('adminbite/assets/images/big/img1.jpg')}}" alt="user" />
-                                <div class="el-overlay">
-                                    <ul class="list-style-none el-info">
-                                        <li class="el-item"><a class="btn default btn-outline image-popup-vertical-fit el-link" href="{{asset('adminbite/assets/images/big/img1.jpg')}}"><i class="sl-icon-magnifier"></i></a></li>
-                                        <li class="el-item"><a class="btn default btn-outline el-link" href="javascript:void(0);"><i class="sl-icon-link"></i></a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="el-card-content">
-                                <h4 class="m-b-0">Project title</h4> <span class="text-muted">subtitle of project</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row m-t-40">
-                <div class="col-md-12">
-                    <h4 class="card-title">Other Gallery </h4>
-                    <h6 class="card-subtitle m-b-20 text-muted">you can make gallery like this</h6> </div>
-                </div>
-                <div class="card-columns el-element-overlay">
-                    <div class="card">
-                        <div class="el-card-item">
-                            <div class="el-card-avatar el-overlay-1">
-                                <a class="image-popup-vertical-fit" href="{{asset('adminbite/assets/images/big/img5.jpg')}}"> <img src="{{asset('adminbite/assets/images/big/img5.jpg')}}" alt="user" /> </a>
-                            </div>
-                            <div class="el-card-content">
-                                <h4 class="m-b-0">Project title</h4> <span class="text-muted">subtitle of project</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="el-card-item">
-                            <div class="el-card-avatar el-overlay-1">
-                                <a class="image-popup-vertical-fit" href="{{asset('adminbite/assets/images/users/1.jpg')}}"> <img src="{{asset('adminbite/assets/images/users/1.jpg')}}" alt="user" /> </a>
-                            </div>
-                            <div class="el-card-content">
-                                <h4 class="m-b-0">Project title</h4> <span class="text-muted">subtitle of project</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="el-card-item">
-                            <div class="el-card-avatar el-overlay-1">
-                                <a class="image-popup-vertical-fit" href="{{asset('adminbite/assets/images/users/2.jpg')}}"> <img src="{{asset('adminbite/assets/images/users/2.jpg')}}" alt="user" /> </a>
-                            </div>
-                            <div class="el-card-content">
-                                <h4 class="m-b-0">Project title</h4> <span class="text-muted">subtitle of project</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="el-card-item">
-                            <div class="el-card-avatar el-overlay-1">
-                                <a class="image-popup-vertical-fit" href="{{asset('adminbite/assets/images/big/img4.jpg')}}"> <img src="{{asset('adminbite/assets/images/big/img4.jpg')}}" alt="user" /> </a>
-                            </div>
-                            <div class="el-card-content">
-                                <h4 class="m-b-0">Project title</h4> <span class="text-muted">subtitle of project</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="el-card-item">
-                            <div class="el-card-avatar el-overlay-1">
-                                <a class="image-popup-vertical-fit" href="{{asset('adminbite/assets/images/big/img2.jpg')}}"> <img src="{{asset('adminbite/assets/images/big/img2.jpg')}}" alt="user" /> </a>
-                            </div>
-                            <div class="el-card-content">
-                                <h4 class="m-b-0">Project title</h4> <span class="text-muted">subtitle of project</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="el-card-item">
-                            <div class="el-card-avatar el-overlay-1">
-                                <a class="image-popup-vertical-fit" href="{{asset('adminbite/assets/images/users/1.jpg')}}"> <img src="{{asset('adminbite/assets/images/big/img1.jpg')}}" alt="user" /> </a>
-                            </div>
-                            <div class="el-card-content">
-                                <h4 class="m-b-0">Project title</h4> <span class="text-muted">subtitle of project</span>
+                                <h4 style="padding-bottom: 4px;" class="m-b-0">Advertising</h4> <span style="color: #595959;">Is a marketing communication that employs an openly sponsored, non-personal message to promote or sell a product, service or idea</span>
                             </div>
                         </div>
                     </div>
@@ -371,8 +271,8 @@
             <!-- ============================================================== -->
             <!-- footer -->
             <!-- ============================================================== -->
-            <footer class="footer text-center">
-             All Rights Reserved by AdminBite admin. Designed and Developed by <a href="https://wrappixel.com">WrapPixel</a>.
+            <footer class="footer text-center" style="background-color: #e3e3e3; ">
+             &copy; Copyright 2019 by <strong><a href="{{url('/')}}">Asta Multimedia Tama</a></strong>. All Rights Reserved.
          </footer>
          <!-- ============================================================== -->
          <!-- End Page wrapper  -->

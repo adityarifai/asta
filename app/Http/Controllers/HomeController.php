@@ -10,6 +10,11 @@ class HomeController extends Controller
     {
         return view('services');
     }
+
+    public function fortofolio()
+    {
+        return view('portofolio');
+    }
     /**
      * Create a new controller instance.
      *

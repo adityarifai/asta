@@ -15,6 +15,7 @@ Route::get('/', function () {
     return view('asta');
 });
 Route::get('services', 'HomeController@layanan')->name('layanan');
+Route::get('portofolio', 'HomeController@fortofolio')->name('fortofolio');
 
 Auth::routes();
 
