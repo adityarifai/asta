@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Pesan;
 
 class PesanController extends Controller
 {
@@ -11,9 +12,12 @@ class PesanController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function indexpesan()
     {
-        //
+        $data['pesans'] = Pesan::all();
+        $data['no'] = 1;
+
+        return view('admin.pesan', $data);
     }
 
     /**
@@ -21,9 +25,16 @@ class PesanController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function create()
+    public function createpesan(Request $r)
     {
-        //
+        $new = new Pesan;
+        $new->pengirim = $r->input('pengirim');
+        $new->email = $r->input('email');
+        $new->judul = $r->input('judul');
+        $new->pesan = $r->input('pesan');
+
+        $new->save();
+        return redirect()->url('/');
     }
 
     /**
