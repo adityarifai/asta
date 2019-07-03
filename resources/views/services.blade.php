@@ -1,311 +1,896 @@
-
 <!DOCTYPE html>
-<html dir="ltr" lang="en">
-
+<html>
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <!-- Tell the browser to be responsive to screen width -->
+    <title>Kokatto - Empowering Your Communication</title>
+    <meta charset="utf-8"> 
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <!-- Favicon icon -->
-    <link href="{{ asset('regna/astafile/ASTAMULTIMEDIATAMA_FIX.ico')}}" rel="icon">
-    <link href="{{ asset('regna/astafile/ASTAMULTIMEDIATAMA_FIX.ico')}}" rel="apple-touch-icon">
-    <title>Asta Services</title>
-    <!-- Custom CSS -->
-    <link href="{{asset('adminbite/assets/libs/chartist/dist/chartist.min.css')}}" rel="stylesheet">
-    <link href="{{asset('adminbite/assets/extra-libs/c3/c3.min.css')}}" rel="stylesheet">
-    <link href="{{asset('adminbite/assets/libs/morris.js/morris.css')}}" rel="stylesheet">
-    <!-- Popup CSS -->
-    <link href="{{asset('adminbite/assets/libs/magnific-popup/dist/magnific-popup.css')}}" rel="stylesheet">
-    <!-- Custom CSS -->
-    <link href="{{asset('adminbite/dist/css/style.min.css')}}" rel="stylesheet">
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-<![endif]-->
-</head>
+    <link rel="icon" href="https://xportal.kokatto.com/img/icons/favicon-16x16.png" sizes="16x16" type="image/png">
+    <!-- Bootstrap -->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!-- End of Bootstrap -->
+
+    <!-- Font -->
+    <link href="https://fonts.googleapis.com/css?family=Hind|Tajawal" rel="stylesheet">
+    <!-- End of Font -->
+
+    <!-- bxSlider -->
+    <script src="https://www.kokatto.com/assets/js/bxslider/jquery.bxslider-custom.js"></script>
+    <link href="https://www.kokatto.com/assets/js/bxslider/jquery.bxslider.min.css" rel="stylesheet" />
+    <!-- End of bxSlider -->
+
+    <!-- masonry -->
+    <script src="https://www.kokatto.com/assets/js/masonry/masonry.pkgd.min.js"></script>
+    <script src="https://www.kokatto.com/assets/js/masonry/masonry-docs.min.js"></script>
+    <!-- End of masonry -->
+
+    <!-- aos -->
+    <script src="https://www.kokatto.com/assets/js/aos/aos.js"></script>
+    <link href="https://www.kokatto.com/assets/js/aos/aos.css" rel="stylesheet" />
+    <!-- End of aos -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    
+    <script src="https://www.kokatto.com/assets/js/flip/flip.min.js"></script>
+    <script src="https://www.kokatto.com/assets/js/turnbox/turnBox.js"></script>
+
+    <link href='https://www.kokatto.com/index.php?css=css_folder/style.v.1551701857' rel='stylesheet' type='text/css'>
+    
+</head>
 <body>
-    <!-- ============================================================== -->
-    <!-- Preloader - style you can find in spinners.css -->
-    <!-- ============================================================== -->
-    <div class="preloader">
-        <div class="lds-ripple">
-            <div class="lds-pos"></div>
-            <div class="lds-pos"></div>
+    <div class="container-fluid no-padding">
+
+        <header class="nav-menu-wrapper">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-4 text-left no-padding-right-mobile">
+                <span class="hover-pointer" onclick="showMenu();">
+                    <span class="open-menu-wrapper"><i class="fa fa-bars" aria-hidden="true"></i>
+                    Menu</span>
+                </span>
+            </div>
+
+            <div class="col-xs-4 text-center">
+                <div class="nav-logo-wrapper"><a href="https://www.kokatto.com/"><img src="https://www.kokatto.com/assets/image/logo.png" class="img-responsive"></a></div>
+            </div>
+
+            <div class="col-xs-4 text-right no-padding-left-mobile">
+                <span class="hover-pointer" onClick="window.open('https://cportal.kokatto.com/login')">
+                    <span>Login <i class="fa fa-sign-in" aria-hidden="true"></i></span>
+                </span>
+            </div>
         </div>
     </div>
-    <!-- ============================================================== -->
-    <!-- Main wrapper - style you can find in pages.scss -->
-    <!-- ============================================================== -->
-    <div id="main-wrapper">
-        <!-- ============================================================== -->
-        <!-- Topbar header - style you can find in pages.scss -->
-        <!-- ============================================================== -->
-        <header class="topbar">
-            <nav class="navbar top-navbar navbar-expand-md navbar-dark">
-                <div class="navbar-header">
-                    <!-- ============================================================== -->
-                    <!-- Logo -->
-                    <!-- ============================================================== -->
-                    <a class="navbar-brand" href="#">
-                        <!-- Logo icon -->
-                        <b class="logo-icon">
-                            <!--You can put here icon as well // <i class="wi wi-sunset"></i> //-->
-                            <!-- Dark Logo icon -->
-                            <img src="{{ asset('regna/astafile/asta3.png')}}" alt="Asta" class="dark-logo" />
-                            <!-- Light Logo icon -->
-                            <img src="{{ asset('regna/astafile/asta2.png')}}" alt="Asta" class="light-logo" />
-                        </b>
-                        <!--End Logo icon -->
-                        <!-- Logo text -->
-                        <span class="logo-text">
-                            <!-- dark Logo text -->
-                            <img src="{{ asset('regna/astafile/handshake.png')}}" style="width: 60%; height: 60%;" alt="Services" class="dark-logo" />
-                            <!-- Light Logo text -->
-                            <img src="{{ asset('regna/astafile/handshake.png')}}" style="width: 60%; height: 60%;" alt="Services" class="light-logo" />
-                        </span>
-                    </a>
-                    <!-- ============================================================== -->
-                    <!-- End Logo -->
-                    <!-- ============================================================== -->
-                    <!-- ============================================================== -->
-                    <!-- Toggle which is visible on mobile only -->
-                    <!-- ============================================================== -->
-                    <a class="topbartoggler d-block d-md-none waves-effect waves-light" href="javascript:void(0)" data-toggle="collapse" data-target="#navbarSupportedContent"
-                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <i class="ti-more"></i>
-                </a>
-            </div>
-            <!-- ============================================================== -->
-            <!-- End Logo -->
-            <!-- ============================================================== -->
-            <div class="navbar-collapse collapse" id="navbarSupportedContent">
-                <!-- ============================================================== -->
-                <!-- toggle and nav items -->
-                <!-- ============================================================== -->
-                <ul class="navbar-nav float-left mr-auto">
-                    <li class="nav-item d-none d-md-block">
-                        <a class="nav-link waves-effect waves-light">
-                            Asta Multimedia Tama - <b>Our Services</b>
-                        </a>
-                    </li>
-                </ul>
-                <!-- ============================================================== -->
-                <!-- Right side toggle and nav items -->
-                <!-- ============================================================== -->
-                <ul class="navbar-nav float-right">
-                    <li class="nav-item">
-                        <a class="nav-link dropdown-toggle text-muted waves-effect waves-dark pro-pic font-20" href="#">Services
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link dropdown-toggle text-muted waves-effect waves-dark pro-pic font-20" href="{{route('fortofolio')}}">Portofolio
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link dropdown-toggle text-muted waves-effect waves-dark pro-pic font-20" href="{{url('/')}}">Home
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-    </header>
-    <!-- ============================================================== -->
-    <!-- End Topbar header -->
-    <!-- ============================================================== -->
-    <!-- ============================================================== -->
-    <!-- Left Sidebar - style you can find in sidebar.scss  -->
-    <!-- ============================================================== -->
+</header>
 
-    <!-- ============================================================== -->
-    <!-- End Left Sidebar - style you can find in sidebar.scss  -->
-    <!-- ============================================================== -->
-    <!-- ============================================================== -->
-    <!-- Page wrapper  -->
-    <!-- ============================================================== -->
-    <div class="page-wrapper">
-        <!-- ============================================================== -->
-        <!-- Bread crumb and right sidebar toggle -->
-        <!-- ============================================================== -->
-        <div class="page-breadcrumb">
-            <div class="row">
-                <div class="col-5 align-self-center">
-                    <h4 class="page-title">Services Page</h4>
-                    <div class="d-flex align-items-center">
+<div class="navigation-section default">
+    <div class="navigation-wrapper">
+        <div class="close-nagivation-wrapper" onclick="closeMenu()"><i class="fa fa-times" aria-hidden="true"></i></div>
+        <div class="menu-wrapper">
+            <div class="menu-list menu-home"><a href="https://www.kokatto.com/">Home</a></div>
+            <div class="menu-list menu-products"><a href="https://www.kokatto.com/products">Products</a></div>
+            <div class="menu-list menu-services"><a href="https://www.kokatto.com/services">Services</a></div>
+            <div class="menu-list menu-team"><a href="https://www.kokatto.com/team">Team</a></div>
+            <div class="menu-list menu-career"><a href="https://www.kokatto.com/career">Career</a></div>
+            <div class="menu-list menu-contact"><a href="https://www.kokatto.com/contact">Contact</a></div>
+        </div>
+        <div class="menu-social-wrapper">
+            
+                
+                    <a href="https://www.instagram.com/kokatto/" target="_blank"><img class="img-responsive" src="https://www.kokatto.com/images/uploads/global/social-instagram.png"></a>  
+                
+                    <a href="https://www.youtube.com/watch?v=1fx65pwyHbY" target="_blank"><img class="img-responsive" src="https://www.kokatto.com/images/uploads/global/social-youtube.png"></a>   
+                
+                    <a href="https://www.linkedin.com/company/kokatto" target="_blank"><img class="img-responsive" src="https://www.kokatto.com/images/uploads/global/social-linkedin.png"></a> 
+                
+            
+        </div>
+    </div>
+</div>
 
+<script>
+    function showMenu(){
+        $(".navigation-section").removeClass("close-menu default").addClass("active-menu");
+    }
+
+    function closeMenu(){
+        $(".navigation-section").removeClass("active-menu default").addClass("close-menu");
+    }
+    
+    if("services"==""){$(".menu-home").addClass("active");}else{$(".menu-services").addClass("active");}
+    console.log(".menu-list-services");
+    
+    
+
+    $(document).click(function(e){
+        console.log(e.target);
+        if($(e).is('.open-menu-wrapper') ) {
+            //closeMenu();
+            console.log(e.target);
+        }
+    })
+</script>
+
+        <content>
+            
+
+    
+        <div class="services-header header-page-wrapper text-center" style="background: linear-gradient(to right, RGBA(0, 0, 0, 0.5), RGBA(0, 0, 0, 0.5)), url(https://www.kokatto.com/images/uploads/global/image_10.png) no-repeat center center; background-size: cover;">
+            <div class="header-page">
+                <div class="header-page-title">
+                    <p>Where Your Ideas Evolve </p>
+
+<p>Into Product</p>                 
+                </div>
+                <!-- <div class="header-page-info text-center">
+                    In Kokatto, we understand the difficulty companies face in delivering their messages successfully to their customers. From a humble beginning in early 2014, we embarked on a journey to solve this problem. And now our clients enjoy a more effective and efficient way of communicating their messages across. Say hello, to the future of notifications!
+                </div> -->
+                <div class="kokatto-red-button" onclick="window.location.href='https://www.kokatto.com/estimate'">
+                    Get A Quote <i class="fa fa-angle-right" aria-hidden="true"></i>
+                </div>
+            </div>  
+        </div>
+    
+
+
+    <div class="services-products-speciality-section">
+        <div class="container">
+            <div class="row homepage-team-title-wrapper">
+                <div class="col-md-3 no-padding-desktop speciality-slider-pager-container">
+                    <div class="title-3">
+                        Our Speciality<br/>
+                        Services
+                    </div>
+                    <div>
+                        <span id="speciality-pager-prev" class="speciality-pager-wrapper"></span>
+                        <span id="speciality-pager-next" class="speciality-pager-wrapper"></span>
                     </div>
                 </div>
-                <div class="col-7 align-self-center">
-                    <div class="d-flex no-block justify-content-end align-items-center">
-                        <nav aria-label="breadcrumb">
-                            <ol class="breadcrumb">
-                                <li class="breadcrumb-item">
-                                    <a href="{{url('/')}}">Home</a>
-                                </li>
-                                <li class="breadcrumb-item active" aria-current="page">Services</li>
-                            </ol>
-                        </nav>
+                <div class="col-md-offset-1 col-md-8 no-padding speciality-slider-container">
+                    <div class="col-md-offset-2 col-md-8 no-padding">
+                        <div id="speciality-wraper">
+                            
+                                <div class="speciality-list" data-slide="0">
+                                    <div class="speciality-list-icon"><img src="https://www.kokatto.com/images/uploads/global/api.png" class="img-responsive"></div>
+                                    <div class="speciality-list-name">API based Development</div>
+                                    <div class="speciality-list-description"><p>We develop API based application for you to easily access and analyze your data</p></div>
+                                </div>
+                            
+                                <div class="speciality-list" data-slide="1">
+                                    <div class="speciality-list-icon"><img src="https://www.kokatto.com/images/uploads/global/mobile-app-developing.png" class="img-responsive"></div>
+                                    <div class="speciality-list-name">Mobile Application Development</div>
+                                    <div class="speciality-list-description"><p>We are experts in Mobile Application Development (Android &amp; iOS)</p></div>
+                                </div>
+                            
+                                <div class="speciality-list" data-slide="2">
+                                    <div class="speciality-list-icon"><img src="https://www.kokatto.com/images/uploads/global/consult.png" class="img-responsive"></div>
+                                    <div class="speciality-list-name">Tech Consultancy Services</div>
+                                    <div class="speciality-list-description"><p>​Professional Technology Consultant Services, including IBM and AWS</p></div>
+                                </div>
+                            
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- ============================================================== -->
-        <!-- End Bread crumb and right sidebar toggle -->
-        <!-- ============================================================== -->
-        <!-- ============================================================== -->
-        <!-- Container fluid  -->
-        <!-- ============================================================== -->
-        <div class="container-fluid">
-            <div class="row el-element-overlay">
-                <div class="col-lg-4 col-md-6">
-                    <div class="card">
-                        <div class="el-card-item">
-                            <div class="el-card-avatar el-overlay-1"> <img src="{{asset('regna/astafile/kegiatan/a.jpg')}}" alt="user" />
-                                <div class="el-overlay">
-                                    <ul class="list-style-none el-info">
-                                        <li class="el-item"><a class="btn default btn-outline image-popup-vertical-fit el-link" href="{{asset('regna/astafile/kegiatan/a.jpg')}}"><i class="sl-icon-magnifier"></i></a></li>
-                                        <li class="el-item"><a class="btn default btn-outline el-link" href="javascript:void(0);"><i class="sl-icon-link"></i></a></li>
-                                    </ul>
-                                </div>
+    </div>
+
+
+
+
+<div class="services-products-list-section">
+    <div class="container">
+        <div class="title-1 text-center">
+            Here Are Some Of Our<br/>
+            Highlighted Project
+        </div>
+
+        
+            
+                <div class="row services-list" data-id="8" data-aos="fade-left">
+                    <div class="col-md-6 no-padding services-list-image">
+                        <img class="img-responsive" src="https://www.kokatto.com/images/uploads/services/Unilever.jpg">
+                    </div>
+                    <div class="col-md-6 no-padding services-project-list-content">
+                        <div class="services-project-header-wrapper">
+                            <div class="services-project-header-logo">
+                                <img src="https://www.kokatto.com/images/uploads/services/unilever_logo_png_%28service_project%29.png">
                             </div>
-                            <div class="el-card-content">
-                                <h4 style="padding-bottom: 4px;" class="m-b-0">Mice</h4> <span style="color: #595959;">Organizing Meeting, Incentive, Convention and Exhibition<br> <br> </span>
+                            <div class="services-project-header-title">
+                                Unilever: Bonus Prestasi web dashboard
                             </div>
+                        </div>
+                        <div class="services-project-view-detail">
+                            <div class="kokatto-red-button">
+                                View Details <i class="fa fa-angle-right" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                        <div class="services-project-technology-used-title">
+                            Technology Used
+                        </div>
+                        <div class="services-project-technology-used-list">
+                            
+                                
+                                    <span class="services-project-technology-used"><img src="https://www.kokatto.com/images/uploads/services/net-logo_rsz.png"></span>
+                                
+                            
+                                
+                                    <span class="services-project-technology-used"><img src="https://www.kokatto.com/images/uploads/services/rsz_microsoft-sql-server-logo-png-11536003314pm60goufi1.png"></span>
+                                
+                            
+                                
+                                    <span class="services-project-technology-used"><img src="https://www.kokatto.com/images/uploads/services/rsz_windows-server-logo.png"></span>
+                                
+                            
+                                
+                                    <span class="services-project-technology-used"><img src="https://www.kokatto.com/images/uploads/services/image_5.png"></span>
+                                
+                            
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="card">
-                        <div class="el-card-item">
-                            <div class="el-card-avatar el-overlay-1"> <img src="{{asset('regna/astafile/kegiatan/b.jpg')}}" alt="user" />
-                                <div class="el-overlay">
-                                    <ul class="list-style-none el-info">
-                                        <li class="el-item"><a class="btn default btn-outline image-popup-vertical-fit el-link" href="{{asset('regna/astafile/kegiatan/b.jpg')}}"><i class="sl-icon-magnifier"></i></a></li>
-                                        <li class="el-item"><a class="btn default btn-outline el-link" href="javascript:void(0);"><i class="sl-icon-link"></i></a></li>
-                                    </ul>
-                                </div>
+            
+        
+            
+                <div class="row services-list" data-id="65" data-aos="fade-right">
+                    <div class="col-md-6 no-padding services-list-image float-right-desktop">
+                        <img class="img-responsive" src="https://www.kokatto.com/images/uploads/services/BTN.jpg">
+                    </div>
+                    <div class="col-md-6 no-padding services-project-list-content">
+                        <div class="services-project-header-wrapper">
+                            <div class="services-project-header-logo">
+                                <img src="https://www.kokatto.com/images/uploads/services/bank_btn_logo-2.png">
                             </div>
-                            <div class="el-card-content">
-                                <h4 style="padding-bottom: 4px;" class="m-b-0">Travel</h4> <span style="color: #595959;">Outbond - Travel Ecotourism and Adventure<br> <br> </span>
+                            <div class="services-project-header-title">
+                                BTN Installment Program
                             </div>
+                        </div>
+                        <div class="services-project-view-detail">
+                            <div class="kokatto-red-button">
+                                View Details <i class="fa fa-angle-right" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                        <div class="services-project-technology-used-title">
+                            Technology Used
+                        </div>
+                        <div class="services-project-technology-used-list">
+                            
+                                
+                                    <span class="services-project-technology-used"><img src="https://www.kokatto.com/images/uploads/services/image_5.png"></span>
+                                
+                            
+                                
+                                    <span class="services-project-technology-used"><img src="https://www.kokatto.com/images/uploads/services/image_3.png"></span>
+                                
+                            
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="card">
-                        <div class="el-card-item">
-                            <div class="el-card-avatar el-overlay-1"> <img src="{{asset('regna/astafile/kegiatan/c.jpg')}}" alt="user" />
-                                <div class="el-overlay">
-                                    <ul class="list-style-none el-info">
-                                        <li class="el-item"><a class="btn default btn-outline image-popup-vertical-fit el-link" href="{{asset('regna/astafile/kegiatan/c.jpg')}}"><i class="sl-icon-magnifier"></i></a></li>
-                                        <li class="el-item"><a class="btn default btn-outline el-link" href="javascript:void(0);"><i class="sl-icon-link"></i></a></li>
-                                    </ul>
-                                </div>
+            
+        
+            
+                <div class="row services-list" data-id="71" data-aos="fade-left">
+                    <div class="col-md-6 no-padding services-list-image">
+                        <img class="img-responsive" src="https://www.kokatto.com/images/uploads/services/SystemZ.png">
+                    </div>
+                    <div class="col-md-6 no-padding services-project-list-content">
+                        <div class="services-project-header-wrapper">
+                            <div class="services-project-header-logo">
+                                <img src="https://www.kokatto.com/images/uploads/services/rsz_ibm_png19652.png">
                             </div>
-                            <div class="el-card-content">
-                                <h4 style="padding-bottom: 4px;" class="m-b-0">Product Launching</h4> <span style="color: #595959;">Launching a new product can be an exciting time for any company</span>
+                            <div class="services-project-header-title">
+                                IBM Z Mainframe Server Consultancy Services
                             </div>
+                        </div>
+                        <div class="services-project-view-detail">
+                            <div class="kokatto-red-button">
+                                View Details <i class="fa fa-angle-right" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                        <div class="services-project-technology-used-title">
+                            Technology Used
+                        </div>
+                        <div class="services-project-technology-used-list">
+                            
+                                
+                                    <span class="services-project-technology-used"><img src="https://www.kokatto.com/images/uploads/services/rsz_logo_zos.png"></span>
+                                
+                            
+                                
+                                    <span class="services-project-technology-used"><img src="https://www.kokatto.com/images/uploads/services/rsz_transparent_ibm_cics_logo_1.png"></span>
+                                
+                            
+                                
+                                    <span class="services-project-technology-used"><img src="https://www.kokatto.com/images/uploads/services/rsz_1280px-tivoli_software_logo.png"></span>
+                                
+                            
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="card">
-                        <div class="el-card-item">
-                            <div class="el-card-avatar el-overlay-1"> <img src="{{asset('regna/astafile/kegiatan/d.jpg')}}" alt="user" />
-                                <div class="el-overlay">
-                                    <ul class="list-style-none el-info">
-                                        <li class="el-item"><a class="btn default btn-outline image-popup-vertical-fit el-link" href="{{asset('regna/astafile/kegiatan/d.jpg')}}"><i class="sl-icon-magnifier"></i></a></li>
-                                        <li class="el-item"><a class="btn default btn-outline el-link" href="javascript:void(0);"><i class="sl-icon-link"></i></a></li>
-                                    </ul>
-                                </div>
+            
+        
+            
+                <div class="row services-list" data-id="47" data-aos="fade-right">
+                    <div class="col-md-6 no-padding services-list-image float-right-desktop">
+                        <img class="img-responsive" src="https://www.kokatto.com/images/uploads/services/Ponimu.jpg">
+                    </div>
+                    <div class="col-md-6 no-padding services-project-list-content">
+                        <div class="services-project-header-wrapper">
+                            <div class="services-project-header-logo">
+                                <img src="https://www.kokatto.com/images/uploads/services/1280px-Logo_Ponimu.svg_.png">
                             </div>
-                            <div class="el-card-content">
-                                <h4 style="padding-bottom: 4px;" class="m-b-0">Multimedia</h4> <span style="color: #595959;">Record, Photograph, Film, Graphic Design and Printing<br> <br> <br></span>
+                            <div class="services-project-header-title">
+                                Ponimu - Legal Anime Video On Demand Application
                             </div>
+                        </div>
+                        <div class="services-project-view-detail">
+                            <div class="kokatto-red-button">
+                                View Details <i class="fa fa-angle-right" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                        <div class="services-project-technology-used-title">
+                            Technology Used
+                        </div>
+                        <div class="services-project-technology-used-list">
+                            
+                                
+                                    <span class="services-project-technology-used"><img src="https://www.kokatto.com/images/uploads/services/image_14.1.png"></span>
+                                
+                            
+                                
+                                    <span class="services-project-technology-used"><img src="https://www.kokatto.com/images/uploads/services/kotlin_logo_64.png"></span>
+                                
+                            
+                                
+                                    <span class="services-project-technology-used"><img src="https://www.kokatto.com/images/uploads/services/vuejs_logo_64.png"></span>
+                                
+                            
+                                
+                                    <span class="services-project-technology-used"><img src="https://www.kokatto.com/images/uploads/services/image_5.png"></span>
+                                
+                            
+                                
+                                    <span class="services-project-technology-used"><img src="https://www.kokatto.com/images/uploads/services/rsz_spring-boot-logo.png"></span>
+                                
+                            
+                                
+                                    <span class="services-project-technology-used"><img src="https://www.kokatto.com/images/uploads/services/rsz_aws-logo-orig-1-1.png"></span>
+                                
+                            
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="card">
-                        <div class="el-card-item">
-                            <div class="el-card-avatar el-overlay-1"> <img src="{{asset('regna/astafile/kegiatan/e.jpg')}}" alt="user" />
-                                <div class="el-overlay">
-                                    <ul class="list-style-none el-info">
-                                        <li class="el-item"><a class="btn default btn-outline image-popup-vertical-fit el-link" href="{{asset('regna/astafile/kegiatan/e.jpg')}}"><i class="sl-icon-magnifier"></i></a></li>
-                                        <li class="el-item"><a class="btn default btn-outline el-link" href="javascript:void(0);"><i class="sl-icon-link"></i></a></li>
-                                    </ul>
-                                </div>
+            
+        
+            
+                <div class="row services-list" data-id="9" data-aos="fade-left">
+                    <div class="col-md-6 no-padding services-list-image">
+                        <img class="img-responsive" src="https://www.kokatto.com/images/uploads/services/Foxlogger.jpg">
+                    </div>
+                    <div class="col-md-6 no-padding services-project-list-content">
+                        <div class="services-project-header-wrapper">
+                            <div class="services-project-header-logo">
+                                <img src="https://www.kokatto.com/images/uploads/services/fox_logger_logo_copy.png">
                             </div>
-                            <div class="el-card-content">
-                                <h4 style="padding-bottom: 4px;" class="m-b-0">IT Solution</h4> <span style="color: #595959;">IT Solution and Multimedia Communication<br> <br> <br> </span>
+                            <div class="services-project-header-title">
+                                Foxlogger GPS Tracker
                             </div>
+                        </div>
+                        <div class="services-project-view-detail">
+                            <div class="kokatto-red-button">
+                                View Details <i class="fa fa-angle-right" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                        <div class="services-project-technology-used-title">
+                            Technology Used
+                        </div>
+                        <div class="services-project-technology-used-list">
+                            
+                                
+                                    <span class="services-project-technology-used"><img src="https://www.kokatto.com/images/uploads/services/image_5.png"></span>
+                                
+                            
+                                
+                                    <span class="services-project-technology-used"><img src="https://www.kokatto.com/images/uploads/services/ionic_logo_64.png"></span>
+                                
+                            
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="card">
-                        <div class="el-card-item">
-                            <div class="el-card-avatar el-overlay-1"> <img src="{{asset('regna/astafile/kegiatan/f.jpg')}}" alt="user" />
-                                <div class="el-overlay">
-                                    <ul class="list-style-none el-info">
-                                        <li class="el-item"><a class="btn default btn-outline image-popup-vertical-fit el-link" href="{{asset('regna/astafile/kegiatan/f.jpg')}}"><i class="sl-icon-magnifier"></i></a></li>
-                                        <li class="el-item"><a class="btn default btn-outline el-link" href="javascript:void(0);"><i class="sl-icon-link"></i></a></li>
-                                    </ul>
-                                </div>
+            
+        
+            
+                <div class="row services-list" data-id="67" data-aos="fade-right">
+                    <div class="col-md-6 no-padding services-list-image float-right-desktop">
+                        <img class="img-responsive" src="https://www.kokatto.com/images/uploads/services/tez_laptop.png">
+                    </div>
+                    <div class="col-md-6 no-padding services-project-list-content">
+                        <div class="services-project-header-wrapper">
+                            <div class="services-project-header-logo">
+                                <img src="https://www.kokatto.com/images/uploads/services/tvi-default.png">
                             </div>
-                            <div class="el-card-content">
-                                <h4 style="padding-bottom: 4px;" class="m-b-0">Advertising</h4> <span style="color: #595959;">Is a marketing communication that employs an openly sponsored, non-personal message to promote or sell a product, service or idea</span>
+                            <div class="services-project-header-title">
+                                Tez Ventura Indonesia - Accounting Web System
                             </div>
                         </div>
+                        <div class="services-project-view-detail">
+                            <div class="kokatto-red-button">
+                                View Details <i class="fa fa-angle-right" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                        <div class="services-project-technology-used-title">
+                            Technology Used
+                        </div>
+                        <div class="services-project-technology-used-list">
+                            
+                                
+                                    <span class="services-project-technology-used"><img src="https://www.kokatto.com/images/uploads/services/image_3.png"></span>
+                                
+                            
+                        </div>
+                    </div>
+                </div>
+            
+        
+            
+                <div class="row services-list" data-id="70" data-aos="fade-left">
+                    <div class="col-md-6 no-padding services-list-image">
+                        <img class="img-responsive" src="https://www.kokatto.com/images/uploads/services/Bringbax_572x400.jpg">
+                    </div>
+                    <div class="col-md-6 no-padding services-project-list-content">
+                        <div class="services-project-header-wrapper">
+                            <div class="services-project-header-logo">
+                                <img src="https://www.kokatto.com/images/uploads/services/logo_bringbax.png">
+                            </div>
+                            <div class="services-project-header-title">
+                                Bringbax - Jasa Titip Application
+                            </div>
+                        </div>
+                        <div class="services-project-view-detail">
+                            <div class="kokatto-red-button">
+                                View Details <i class="fa fa-angle-right" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                        <div class="services-project-technology-used-title">
+                            Technology Used
+                        </div>
+                        <div class="services-project-technology-used-list">
+                            
+                                
+                                    <span class="services-project-technology-used"><img src="https://www.kokatto.com/images/uploads/services/image_14.1.png"></span>
+                                
+                            
+                                
+                                    <span class="services-project-technology-used"><img src="https://www.kokatto.com/images/uploads/services/kotlin_logo_64.png"></span>
+                                
+                            
+                                
+                                    <span class="services-project-technology-used"><img src="https://www.kokatto.com/images/uploads/services/swift_logo_64.png"></span>
+                                
+                            
+                                
+                                    <span class="services-project-technology-used"><img src="https://www.kokatto.com/images/uploads/services/angular_logo_final.png"></span>
+                                
+                            
+                                
+                                    <span class="services-project-technology-used"><img src="https://www.kokatto.com/images/uploads/services/rsz_aws-logo-orig-1-1.png"></span>
+                                
+                            
+                        </div>
+                    </div>
+                </div>
+            
+        
+            
+                <div class="row services-list" data-id="48" data-aos="fade-right">
+                    <div class="col-md-6 no-padding services-list-image float-right-desktop">
+                        <img class="img-responsive" src="https://www.kokatto.com/images/uploads/services/ONTA.jpg">
+                    </div>
+                    <div class="col-md-6 no-padding services-project-list-content">
+                        <div class="services-project-header-wrapper">
+                            <div class="services-project-header-logo">
+                                <img src="https://www.kokatto.com/images/uploads/services/unnamed.png">
+                            </div>
+                            <div class="services-project-header-title">
+                                Onta - Online Travel Assistant
+                            </div>
+                        </div>
+                        <div class="services-project-view-detail">
+                            <div class="kokatto-red-button">
+                                View Details <i class="fa fa-angle-right" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                        <div class="services-project-technology-used-title">
+                            Technology Used
+                        </div>
+                        <div class="services-project-technology-used-list">
+                            
+                                
+                                    <span class="services-project-technology-used"><img src="https://www.kokatto.com/images/uploads/services/image_14.1.png"></span>
+                                
+                            
+                                
+                                    <span class="services-project-technology-used"><img src="https://www.kokatto.com/images/uploads/services/kotlin_logo_64.png"></span>
+                                
+                            
+                                
+                                    <span class="services-project-technology-used"><img src="https://www.kokatto.com/images/uploads/services/swift_logo_64.png"></span>
+                                
+                            
+                                
+                                    <span class="services-project-technology-used"><img src="https://www.kokatto.com/images/uploads/services/image_5.png"></span>
+                                
+                            
+                                
+                                    <span class="services-project-technology-used"><img src="https://www.kokatto.com/images/uploads/services/rsz_php_png26.png"></span>
+                                
+                            
+                        </div>
+                    </div>
+                </div>
+            
+        
+            
+                <div class="row services-list" data-id="69" data-aos="fade-left">
+                    <div class="col-md-6 no-padding services-list-image">
+                        <img class="img-responsive" src="https://www.kokatto.com/images/uploads/services/buumi_laptop.png">
+                    </div>
+                    <div class="col-md-6 no-padding services-project-list-content">
+                        <div class="services-project-header-wrapper">
+                            <div class="services-project-header-logo">
+                                <img src="https://www.kokatto.com/images/uploads/services/bumi_playscape_logo_copy.png">
+                            </div>
+                            <div class="services-project-header-title">
+                                Buumi Playscape – Website Application
+                            </div>
+                        </div>
+                        <div class="services-project-view-detail">
+                            <div class="kokatto-red-button">
+                                View Details <i class="fa fa-angle-right" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                        <div class="services-project-technology-used-title">
+                            Technology Used
+                        </div>
+                        <div class="services-project-technology-used-list">
+                            
+                                
+                                    <span class="services-project-technology-used"><img src="https://www.kokatto.com/images/uploads/services/image_3.png"></span>
+                                
+                            
+                        </div>
+                    </div>
+                </div>
+            
+        
+
+    </div>
+</div>
+
+    
+        <div class="services-footer header-page-wrapper text-center" style="background: linear-gradient(to right, RGBA(0, 0, 0, 0.7), RGBA(0, 0, 0, 0.8)), url(https://www.kokatto.com/images/uploads/global/image_10.png) no-repeat center center; background-size: cover;">
+            <div class="header-page">
+                <div class="header-page-title">
+                    <p>Already Have An Idea?<br>
+ Share With Us Now.</p>
+                </div>
+                
+                <div class="kokatto-red-button" onclick="window.location.href='https://www.kokatto.com/estimate'">
+                    Get A Quote <i class="fa fa-angle-right" aria-hidden="true"></i>
+                </div>
+            </div>
+        </div>
+    
+
+
+
+<div id="project-detail-modal" class="modal fade" role="dialog">
+    
+</div>
+
+<script>
+    var slider;
+    $(window).on("load",function(){
+        slider=$('#speciality-wraper').bxSlider({
+            nextSelector: '#speciality-pager-next',
+            prevSelector: '#speciality-pager-prev',
+            nextText: '<i class="fa fa-angle-right" aria-hidden="true"></i>',
+            prevText: '<i class="fa fa-angle-left" aria-hidden="true"></i>',
+            pager: false,
+            //auto: true,
+            mode: 'horizontal',
+            speed: 1000,
+            autoDelay: 1000,
+            //minSlides: 2,
+            infiniteLoop: false,
+            hideControlOnEnd: true,
+        });
+
+        var $grid = $('.grid').masonry({
+            itemSelector: '.grid-item',
+            percentPosition: true,
+            columnWidth: '.grid-sizer',
+        });
+        // layout Masonry after each image loads
+        $grid.imagesLoaded().progress( function() {$grid.masonry();});
+    });
+
+    $(document).on("click",".services-project-view-detail .kokatto-red-button",function(){
+        $.ajax({
+            url: "https://www.kokatto.com/services/load_modal/"+$(this).closest(".services-list").attr("data-id"),
+            success: function(result){
+                //console.log(result);
+                $("#project-detail-modal").empty().append(result);
+                $("#project-detail-modal").modal("show");
+            }
+        });
+        
+    });
+
+    $(document).on("click",".speciality-list",function(){slider.goToSlide($(this).attr("data-slide"));});
+</script>
+        </content>
+
+        <footer class="footer-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="logo-footer-wrapper">
+                            <div class="logo-footer"><img class="img-responsive" src="https://www.kokatto.com/assets/image/logo.png"></div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="col-md-12 no-padding footer-tagline-section">
+                            <div class="footer-title">
+                                Let's Make Great Things!
+                            </div>
+                            <div class="footer-article">
+                                We are looking forward to grow your business with technology. If you have any question regarding your business, don’t hesitate to tell us!
+                            </div>
+                            <img class="img-responsive" src="https://www.kokatto.com/assets/image/license.png">
+                        </div>
+                        
+                            <div class="col-md-6 no-padding footer-address-section">
+                                <div class="footer-title">
+                                    Address
+                                </div>
+                                <div class="footer-article">
+                                    <p>PT Kokatto Teknologi Global<br>
+ Menara Prima - 9th Floor<br>
+ Mega Kuningan, Setiabudi<br>
+ Jakarta Selatan - 12950</p>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6 no-padding footer-contact-section">
+                                
+                                <div class="footer-title">
+                                    Contact
+                                </div>
+                                <div class="footer-article">
+                                    
+                                        P : +6221 3972 3972<br/>
+                                    
+                                        E : support@kokatto.com<br/>
+                                    
+                                </div>
+                                <div class="footer-media-social">
+                                    
+                                        <a href="https://www.instagram.com/kokatto/" target="_blank"><img class="img-responsive" src="https://www.kokatto.com/images/uploads/global/social-instagram.png"></a>
+                                    
+                                        <a href="https://www.youtube.com/watch?v=1fx65pwyHbY" target="_blank"><img class="img-responsive" src="https://www.kokatto.com/images/uploads/global/social-youtube.png"></a>
+                                    
+                                        <a href="https://www.linkedin.com/company/kokatto" target="_blank"><img class="img-responsive" src="https://www.kokatto.com/images/uploads/global/social-linkedin.png"></a>
+                                    
+                                </div>
+                            </div>
+                        
+                    </div>
+
+                    <div class="col-md-6">
+                        
+                        <form id="cform" method="post" action="https://www.kokatto.com/index.php/services"  enctype="multipart/form-data" >
+<div class='hiddenFields'>
+<input type="hidden" name="RET" value="https://www.kokatto.com/index.php/services" />
+<input type="hidden" name="URI" value="services" />
+<input type="hidden" name="return_url" value="global/send_mail" />
+<input type="hidden" name="author_id" value="1" />
+<input type="hidden" name="channel_id" value="10" />
+<input type="hidden" name="entry_id" value="0" />
+<input type="hidden" name="ACT" value="1" />
+<input type="hidden" name="meta" value="LuF1SvSSkVkNlX5GqyR4wBmKzOSWvFUnBAtGPeWL+4L1whsVbfYGz2I5tdx6Ibf7mYZG5eQvz9xnL/uzZhrPzIBVGBYUwxG7paEH8YEV60DvCHc26dwnWpfZc+Zgcw1U3RKNfsic5sEDYWNBucaPfHGpr6Gs7PI0VZe21ODqo6xtcd+odjHvdaC3+98xH5c7cclT/J610MTtUXRf2iS4rNZaVMoCsnIycVK2DDdU9mCrqntSH336Min2heSgloFIx18KA0BChjvW9uGzt546hnq3lcv5wHj1QthA4XgJNN7feL80KSPuW0APU24v2suA9CpBNBqW2/NjnMOMM1qshULrtAscMpU1cofZCkSY89KvGBXLeFJ+0f1HCEuLI4xQk7U1pGHWsFIU8Jy6gmj1Kd8j9O0KTWX2G53RisDrIoqCenoiW3wMshXifJuFhTIv" />
+<input type="hidden" name="return" value="global/send_mail" />
+<input type="hidden" name="site_id" value="1" />
+<input type="hidden" name="csrf_token" value="f8df748a4290ef1c98a47a49370d35e8b949865b" />
+</div>
+
+
+                            <form id="inquiry-form">
+                                <input type="hidden" id="title" name="title">
+                                <div class="form-group">
+                                    <input id="name" type="text" name="name" class="form-control" placeholder="Your Name (Required)" oninput="setTitle()" required>
+                                </div>
+                                <div class="form-group">
+                                    <input id="email" type="email" name="client_email" class="form-control" placeholder="Your Email (Required)" required>
+                                </div>
+                                <div class="form-group">
+                                    <input id="subject" type="text" name="subject" class="form-control" placeholder="Subject" required>
+                                </div>
+                                <div class="form-group">
+                                    <textarea id="message" name="message" class="form-control" placeholder="Your Message" rows="4" required></textarea>
+                                </div>
+                                <div class="form-group inquiry-submit-wrapper">
+                                    <button class="kokatto-red-button" onclick="">SEND MESSAGE <i class="fa fa-angle-right" aria-hidden="true"></i></button>
+                                </div>
+                            </form>
+                        </form>
+                        
                     </div>
                 </div>
             </div>
-            <!-- ============================================================== -->
-            <!-- End Container fluid  -->
-            <!-- ============================================================== -->
-            <!-- ============================================================== -->
-            <!-- footer -->
-            <!-- ============================================================== -->
-            <footer class="footer text-center" style="background-color: #e3e3e3; ">
-             &copy; Copyright 2019 by <strong><a href="{{url('/')}}">Asta Multimedia Tama</a></strong>. All Rights Reserved.
-         </footer>
-         <!-- ============================================================== -->
-         <!-- End Page wrapper  -->
-         <!-- ============================================================== -->
-     </div>
-     <!-- ============================================================== -->
-     <!-- End Wrapper -->
-     <!-- ============================================================== -->
-     <!-- ============================================================== -->
-     <!-- All Jquery -->
-     <!-- ============================================================== -->
-     <script src="{{asset('adminbite/assets/libs/jquery/dist/jquery.min.js')}}"></script>
-     <!-- Bootstrap tether Core JavaScript -->
-     <script src="{{asset('adminbite/assets/libs/popper.js/dist/umd/popper.min.js')}}"></script>
-     <script src="{{asset('adminbite/assets/libs/bootstrap/dist/js/bootstrap.min.js')}}"></script>
-     <!-- apps -->
-     <script src="{{asset('adminbite/dist/js/app.min.js')}}"></script>
-     <script src="{{asset('adminbite/dist/js/app.init.overlay.js')}}"></script>
-     <script src="{{asset('adminbite/dist/js/app-style-switcher.js')}}"></script>
-     <!-- slimscrollbar scrollbar JavaScript -->
-     <script src="{{asset('adminbite/assets/libs/perfect-scrollbar/dist/perfect-scrollbar.jquery.min.js')}}"></script>
-     <script src="{{asset('adminbite/assets/extra-libs/sparkline/sparkline.js')}}"></script>
-     <!--Wave Effects -->
-     <script src="{{asset('adminbite/dist/js/waves.js')}}"></script>
-     <!--Menu sidebar -->
-     <script src="{{asset('adminbite/dist/js/sidebarmenu.js')}}"></script>
-     <!--Custom JavaScript -->
-     <script src="{{asset('adminbite/dist/js/custom.min.js')}}"></script>
-     <!--This page JavaScript -->
-     <script src="{{asset('adminbite/assets/libs/magnific-popup/dist/jquery.magnific-popup.min.js')}}"></script>
-     <script src="{{asset('adminbite/assets/libs/magnific-popup/meg.init.js')}}"></script>
 
-     <script src="{{asset('adminbite/dist/js/pages/dashboards/dashboard1.js')}}"></script>
- </body>
+        </footer>
+        <div class="copyright-section text-center">
+            Copyright 2019 by Kokatto. All Rights Reserved
+        </div>
+        <a class="back-to-top"><i class="fa fa-angle-up"></i></a>
+    </div>
 
- </html>
+    <script>
+        $(window).on("load",function(){AOS.init();});   
+        
+        
+        function setTitle(){
+            var counter = 1;
+             
+              
+                counter = 1+1;
+              
+            
+              
+                counter = 2+1;
+              
+            
+              
+                counter = 3+1;
+              
+            
+              
+                counter = 4+1;
+              
+            
+              
+                counter = 5+1;
+              
+            
+              
+                counter = 6+1;
+              
+            
+              
+                counter = 7+1;
+              
+            
+              
+                counter = 8+1;
+              
+            
+              
+                counter = 9+1;
+              
+            
+              
+                counter = 10+1;
+              
+            
+              
+                counter = 11+1;
+              
+            
+              
+                counter = 12+1;
+              
+            
+              
+                counter = 13+1;
+              
+            
+              
+                counter = 14+1;
+              
+            
+              
+                counter = 15+1;
+              
+            
+              
+                counter = 16+1;
+              
+            
+              
+                counter = 17+1;
+              
+            
+              
+                counter = 18+1;
+              
+            
+              
+                counter = 19+1;
+              
+            
+              
+                counter = 20+1;
+              
+            
+              
+                counter = 21+1;
+              
+            
+              
+                counter = 22+1;
+              
+            
+              
+                counter = 23+1;
+              
+            
+              
+                counter = 24+1;
+              
+            
+              
+                counter = 25+1;
+              
+            
+              
+                counter = 26+1;
+              
+            
+              
+                counter = 27+1;
+              
+            
+              
+                counter = 28+1;
+              
+            
+              
+                counter = 29+1;
+              
+            
+              
+                counter = 30+1;
+              
+            
+              
+                counter = 31+1;
+              
+            
+              
+                counter = 32+1;
+              
+            
+            $("#title").attr("value",counter+"-"+$("#name").val());
+            console.log($("#title").val());
+         }
+         
+         $('.back-to-top').click(function() {
+            $("html, body").animate({scrollTop: 0}, 1000);
+         });
+         
+         $(window).scroll(function (event) {
+            if( $(window).scrollTop() > $(window).height()+100 ){$(".back-to-top").fadeIn(500);}else{$(".back-to-top").fadeOut(500);}
+         });
+    </script>
+
+</body>
+</html>
