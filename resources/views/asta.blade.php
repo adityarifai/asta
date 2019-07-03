@@ -32,7 +32,7 @@
     License: https://bootstrapmade.com/license/
     ======================================================= -->
     <style type="text/css">
-    @media (min-width: 1200px) {
+    @media screen and (min-width: 1200px) {
       .containerr {
         width: 1000px;
       }
@@ -56,7 +56,7 @@
         transition-duration: 1s;
       }
     }
-    @media (max-width: 1199px) {
+    @media screen and (max-width: 1199px) {
       .containerr {
         width: 800px;
       }
@@ -80,7 +80,7 @@
         transition-duration: 1s;
       }
     }
-    @media (max-width: 900px) {
+    @media screen and (max-width: 900px) {
       .containerr {
         width: 700px;
       }
@@ -104,7 +104,7 @@
         transition-duration: 1s;
       }
     }
-    @media (max-width: 768px) {
+    @media screen and (max-width: 768px) {
       .containerr {
         width: 620px;
       }
@@ -128,7 +128,7 @@
         transition-duration: 1s;
       }
     }
-    @media (max-width: 500px) {
+    @media screen and (max-width: 500px) {
       .containerr {
         width: 420px;
       }
@@ -190,13 +190,13 @@
       border-radius: 0px 70px 70px 0px;
     }
     .homepage-offerings-menu:hover .homepage-offerings-menu-tagline{
-      -ms-transform: translateX(15px); 
-      -webkit-transform: translateX(15px); 
+      -ms-transform: translateX(15px);
+      -webkit-transform: translateX(15px);
       transform: translateX(15px);
     }
     .homepage-offerings-menu2:hover .homepage-offerings-menu-tagline2{
-      -ms-transform: translateX(-15px); 
-      -webkit-transform: translateX(-15px); 
+      -ms-transform: translateX(-15px);
+      -webkit-transform: translateX(-15px);
       transform: translateX(-15px);
     }
     .homepage-offerings-menu-tagline i{
@@ -274,7 +274,7 @@
             <div class="homepage-offerings-menu2 col-md-6" onclick="window.location.href='#';">
               <div class="homepage-offerings-menu-title">Our Product</div>
               <div class="homepage-offerings-menu-tagline2"><i class="fa fa-angle-left" aria-hidden="true"></i>
-              Ticket Travel &amp; Reservations 
+              Ticket Travel &amp; Reservations
             </div>
           </div>
           <div class="homepage-offerings-menu col-md-6" onclick="window.location.href='{{route('layanan')}}';">
