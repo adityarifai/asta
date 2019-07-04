@@ -3,28 +3,15 @@
 <head>
   <meta charset="utf-8">
   <title>Asta Multimedia Tama</title>
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <meta content="" name="keywords">
-  <meta content="" name="description">
-
-  <!-- Favicons -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="{{ asset('regna/astafile/ASTAMULTIMEDIATAMA_FIX.ico')}}" rel="icon">
   <link href="{{ asset('regna/astafile/ASTAMULTIMEDIATAMA_FIX.ico')}}" rel="apple-touch-icon">
-
-  <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Poppins:300,400,500,700" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="{{ asset('regna/font/font.css')}}"/>
-
-  <!-- Bootstrap CSS File -->
   <link href="{{ asset('regna/lib/bootstrap/css/bootstrap.min.css')}}" rel="stylesheet">
-
-  <!-- Libraries CSS Files -->
-  <!-- <link href="{{ asset('regna/lib/font-awesome/css/font-awesome.min.css')}}" rel="stylesheet"> -->
+  {{-- <link href="{{ asset('regna/lib/font-awesome/css/font-awesome.min.css')}}" rel="stylesheet"> --}}
   <link href="{{ asset('regna/lib/animate/animate.min.css')}}" rel="stylesheet">
-
-  <!-- Main Stylesheet File -->
   <link href="{{ asset('regna/css/style.css')}}" rel="stylesheet">
-
   <!-- =======================================================
     Theme Name: Regna
     Theme URL: https://bootstrapmade.com/regna-bootstrap-onepage-template/
@@ -32,7 +19,7 @@
     License: https://bootstrapmade.com/license/
     ======================================================= -->
     <style type="text/css">
-    @media (min-width: 1200px) {
+    @media screen and (min-width: 1200px) {
       .containerr {
         width: 1000px;
       }
@@ -56,7 +43,7 @@
         transition-duration: 1s;
       }
     }
-    @media (max-width: 1199px) {
+    @media screen and (max-width: 1199px) {
       .containerr {
         width: 800px;
       }
@@ -80,7 +67,7 @@
         transition-duration: 1s;
       }
     }
-    @media (max-width: 900px) {
+    @media screen and (max-width: 900px) {
       .containerr {
         width: 700px;
       }
@@ -104,7 +91,7 @@
         transition-duration: 1s;
       }
     }
-    @media (max-width: 768px) {
+    @media screen and (max-width: 768px) {
       .containerr {
         width: 620px;
       }
@@ -128,9 +115,10 @@
         transition-duration: 1s;
       }
     }
-    @media (max-width: 500px) {
+    @media screen and (max-width: 500px) {
       .containerr {
-        width: 420px;
+        /* max-width: 420px; */
+        width: 85%;
       }
       .homepage-offerings-menu-title{
         font-weight: 700;
@@ -162,13 +150,21 @@
     }
     .homepage-offerings-menu{
       text-align: left;
-      padding: 25px 40px;
+      flex-direction: column;
+      display: inline-flex !important;
+      padding: 20px 0;
+      align-items: flex-start;
+      justify-content: center;
       border: 2px solid #FCFCFC;
       background-color: rgba(0,0,0,0.34);
     }
     .homepage-offerings-menu2{
       text-align: right;
-      padding: 25px 40px;
+      flex-direction: column;
+      display: inline-flex !important;
+      padding: 20px 0;
+      align-items: flex-end;
+      justify-content: center;
       border: 2px solid #FCFCFC;
       background-color: rgba(0,0,0,0.34);
     }
@@ -190,20 +186,17 @@
       border-radius: 0px 70px 70px 0px;
     }
     .homepage-offerings-menu:hover .homepage-offerings-menu-tagline{
-      -ms-transform: translateX(15px); 
-      -webkit-transform: translateX(15px); 
+      -ms-transform: translateX(15px);
+      -webkit-transform: translateX(15px);
       transform: translateX(15px);
     }
     .homepage-offerings-menu2:hover .homepage-offerings-menu-tagline2{
-      -ms-transform: translateX(-15px); 
-      -webkit-transform: translateX(-15px); 
+      -ms-transform: translateX(-15px);
+      -webkit-transform: translateX(-15px);
       transform: translateX(-15px);
     }
     .homepage-offerings-menu-tagline i{
       padding-left: 15px;
-    }
-    .homepage-offerings-menu-tagline2 i{
-      padding-right: 15px;
     }
     .no-margin {
       margin-left: 0px;
@@ -219,6 +212,59 @@
     .col-md-6 {
       width: 50%;
     }
+
+    body {
+      overflow-x: hidden;
+    }
+    .homepage-offerings-menu-tagline2 {
+      display: inline-flex;
+      text-align: right;
+      text-indent: 40px;
+      padding-right: 20px;
+      margin-top: 20px;
+      position: relative;
+    }
+    .homepage-offerings-menu-tagline {
+      position: relative;
+    }
+    .homepage-offerings-menu-tagline2 i, .homepage-offerings-menu-tagline i {
+      position: absolute;
+      left: 0;
+      top: 0%;
+      transform: translateY(-50%) translateX(-10px);
+    }
+    .homepage-offerings-menu-tagline i {
+      left: auto;
+      right: 0;
+      transform: translate(-20px, -50%);
+    }
+    .homepage-offerings-menu2 .homepage-offerings-menu-title {
+      padding-right: 20px;
+    }
+    .homepage-offerings-menu .homepage-offerings-menu-tagline {
+      padding-left: 20px;
+      display: inline-flex;
+    }
+    .homepage-offerings-menu .homepage-offerings-menu-title {
+      padding-left: 20px;
+    }
+    .homepage-offerings-menu .homepage-offerings-menu-tagline {
+      margin-top: 20px;
+    }
+    @media screen and (min-width: 412px) {
+      .homepage-offerings-menu-tagline2, .homepage-offerings-menu .homepage-offerings-menu-tagline {
+        width: 100%;
+      }
+      .homepage-offerings-menu-tagline2 {
+        justify-content: flex-end;
+      }
+      .homepage-offerings-menu-tagline2 i, .homepage-offerings-menu-tagline i {
+        position: static;
+        transform: none;
+        line-height: 38px;
+        height: 38px;
+      }
+    }
   </style>
 </head>
 
@@ -227,6 +273,7 @@
   Header
   ============================-->
   <header id="header">
+    <button type="button" id="mobile-nav-toggle"><i class="fa fa-bars"></i></button>
     <div class="container">
 
       <div id="logo" class="pull-left">
@@ -273,9 +320,7 @@
           <div class="homepage-offerings row no-margin text-center">
             <div class="homepage-offerings-menu2 col-md-6" onclick="window.location.href='#';">
               <div class="homepage-offerings-menu-title">Our Product</div>
-              <div class="homepage-offerings-menu-tagline2"><i class="fa fa-angle-left" aria-hidden="true"></i>
-              Ticket Travel &amp; Reservations 
-            </div>
+              <div class="homepage-offerings-menu-tagline2"><i class="fa fa-angle-left" aria-hidden="true"></i> Ticket Travel &amp; Reservations</div>
           </div>
           <div class="homepage-offerings-menu col-md-6" onclick="window.location.href='{{route('layanan')}}';">
             <div class="homepage-offerings-menu-title">Our Services</div>
