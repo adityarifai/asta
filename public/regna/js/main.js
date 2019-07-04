@@ -1,7 +1,10 @@
-jQuery(document).ready(function ($) {
-
+$(document).ready(function () {
+  // $("#product .row .col-12").css("transform", "none");
+  // $("#product .row .col-12").css("transform", "none");
+  // $("#product .row .col-12:nth-of-type(2)").delay(1000).css("transform", "none");
   // Header fixed and Back to top button
   $(window).scroll(function () {
+
     if ($(this).scrollTop() > 100) {
       $('.back-to-top').fadeIn('slow');
       $('#header').addClass('header-fixed');
@@ -126,5 +129,4 @@ jQuery(document).ready(function ($) {
   });
 
   // custom code
-
 });
