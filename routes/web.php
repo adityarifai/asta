@@ -24,6 +24,6 @@ Route::middleware('auth')->group(function() {
 	Route::get('admin', 'AdminController@beranda')->name('beranda');
 	Route::prefix('pesan')->group(function() {
 		Route::get('/', 'PesanController@indexpesan')->name('pesan.all');
-		Route::get('delete/{id}', 'PesanController@deletepesan')->name('pesan.delete');
+		Route::get('delete/{id}', 'PesanController@destroy')->name('pesan.delete');
 	});
 });

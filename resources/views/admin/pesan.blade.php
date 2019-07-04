@@ -7,7 +7,7 @@
     <div class="page-breadcrumb">
         <div class="row">
             <div class="col-5 align-self-center">
-                <h4 class="page-title">Beranda</h4>
+                <h4 class="page-title">Pesan & Saran</h4>
                 <div class="d-flex align-items-center">
 
                 </div>
@@ -17,7 +17,7 @@
                     <nav aria-label="breadcrumb">
                         <ol class="breadcrumb">
                             <li class="breadcrumb-item" aria-current="page">Administrator</li>
-                            <li class="breadcrumb-item active" aria-current="page">Beranda</li>
+                            <li class="breadcrumb-item active" aria-current="page">Pesan</li>
                         </ol>
                     </nav>
                 </div>
@@ -31,96 +31,51 @@
     <!-- Container fluid  -->
     <!-- ============================================================== -->
     <div class="container-fluid">
-        <!-- ============================================================== -->
-        <!-- Info box -->
-        <!-- ============================================================== -->
-        <div class="card-group">
-            <!-- Card -->
-            <div class="card">
-                <div class="card-body">
-                    <div class="d-flex align-items-center">
-                        <div class="m-r-10">
-                            <span class="btn btn-circle btn-lg bg-danger">
-                                <i class="ti-clipboard text-white"></i>
-                            </span>
-                        </div>
-                        <div>
-                            New projects
-                        </div>
-                        <div class="ml-auto">
-                            <h2 class="m-b-0 font-light">23</h2>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- Card -->
-            <!-- Card -->
-            <div class="card">
-                <div class="card-body">
-                    <div class="d-flex align-items-center">
-                        <div class="m-r-10">
-                            <span class="btn btn-circle btn-lg btn-info">
-                                <i class="ti-wallet text-white"></i>
-                            </span>
-                        </div>
-                        <div>
-                            Total Earnings
-
-                        </div>
-                        <div class="ml-auto">
-                            <h2 class="m-b-0 font-light">113</h2>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- Card -->
-            <!-- Card -->
-            <div class="card">
-                <div class="card-body">
-                    <div class="d-flex align-items-center">
-                        <div class="m-r-10">
-                            <span class="btn btn-circle btn-lg bg-success">
-                                <i class="ti-shopping-cart text-white"></i>
-                            </span>
-                        </div>
-                        <div>
-                            Total Sales
-
-                        </div>
-                        <div class="ml-auto">
-                            <h2 class="m-b-0 font-light">43</h2>
+        <div class="row">
+            <div class="col-12">
+                <div class="card">
+                    <div class="card-body">
+                        <h4 class="card-title">Daftar Saran</h4>
+                        <h6 class="card-subtitle">Beberapa <code>pesan dan saran</code> dari pengunjung.</h6>
+                        <div class="table-responsive">
+                            <table id="demo-foo-addrow" class="table m-t-30 no-wrap table-hover contact-list" data-page-size="10">
+                                <thead>
+                                    <tr>
+                                        <th>No</th>
+                                        <th>Name</th>
+                                        <th>Email</th>
+                                        <th>Subject</th>
+                                        <th>Message</th>
+                                        <th>Type</th>
+                                        <th>Time</th>
+                                        <th>Action</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    @foreach($pesans as $psn)
+                                    <tr>
+                                        <td>{{ $no++ }}</td>
+                                        <td>
+                                            <a><img src="{{asset('regna\astafile\users.jpg')}}" alt="user" width="20" class="rounded-circle" /> {{ $psn->pengirim }}</a>
+                                        </td>
+                                        <td>{{ $psn->email }}</td>
+                                        <td>{{ $psn->judul }}</td>
+                                        <td>{{ $psn->pesan }}</td>
+                                        <td><span class="label label-danger">Email</span> </td>
+                                        <td>{{ $psn->created_at }}</td>
+                                        <td>
+                                            
+                                            <a href="{{route('pesan.delete', $psn->id)}}">Delete</a>
+                                        </td>
+                                    </tr>
+                                    @endforeach
+                                </tbody>
+                            </table>
                         </div>
                     </div>
                 </div>
             </div>
-            <!-- Card -->
-            <!-- Card -->
-            <div class="card">
-                <div class="card-body">
-                    <div class="d-flex align-items-center">
-                        <div class="m-r-10">
-                            <span class="btn btn-circle btn-lg bg-warning">
-                                <i class="mdi mdi-currency-usd text-white"></i>
-                            </span>
-                        </div>
-                        <div>
-                            Profit
-
-                        </div>
-                        <div class="ml-auto">
-                            <h2 class="m-b-0 font-light">63</h2>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- Card -->
-            <!-- Column -->
-
-
         </div>
-        <!-- ============================================================== -->
-        <!-- Info box -->
-        <!-- ============================================================== -->
     </div>
     <!-- ============================================================== -->
     <!-- End Container fluid  -->

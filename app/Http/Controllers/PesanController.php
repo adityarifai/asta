@@ -90,6 +90,12 @@ class PesanController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $psn = Pesan::find($id);
+        if (isset($psn)) {
+            $psn->delete();
+        }else{
+            echo "ada kesalahann !";
+        }
+        return redirect()->route('pesan.all');
     }
 }

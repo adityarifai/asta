@@ -48,87 +48,87 @@
     <div class="container-fluid no-padding">
 
         <header class="nav-menu-wrapper">
-    <div class="container">
-        <div class="row">
-            <div class="col-xs-4 text-left no-padding-right-mobile">
-                <span class="hover-pointer" onclick="showMenu();">
-                    <span class="open-menu-wrapper"><i class="fa fa-bars" aria-hidden="true"></i>
-                    Menu</span>
-                </span>
-            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-4 text-left no-padding-right-mobile">
+                        <span class="hover-pointer" onclick="showMenu();">
+                            <span class="open-menu-wrapper"><i class="fa fa-bars" aria-hidden="true"></i>
+                            Menu</span>
+                        </span>
+                    </div>
 
-            <div class="col-xs-4 text-center">
-                <div class="nav-logo-wrapper"><a href="https://www.kokatto.com/"><img src="https://www.kokatto.com/assets/image/logo.png" class="img-responsive"></a></div>
-            </div>
+                    <div class="col-xs-4 text-center">
+                        <div class="nav-logo-wrapper"><a href="https://www.kokatto.com/"><img src="https://www.kokatto.com/assets/image/logo.png" class="img-responsive"></a></div>
+                    </div>
 
-            <div class="col-xs-4 text-right no-padding-left-mobile">
-                <span class="hover-pointer" onClick="window.open('https://cportal.kokatto.com/login')">
-                    <span>Login <i class="fa fa-sign-in" aria-hidden="true"></i></span>
-                </span>
+                    <div class="col-xs-4 text-right no-padding-left-mobile">
+                        <span class="hover-pointer" onClick="window.open('https://cportal.kokatto.com/login')">
+                            <span>Login <i class="fa fa-sign-in" aria-hidden="true"></i></span>
+                        </span>
+                    </div>
+                </div>
             </div>
-        </div>
-    </div>
-</header>
+        </header>
 
-<div class="navigation-section default">
-    <div class="navigation-wrapper">
-        <div class="close-nagivation-wrapper" onclick="closeMenu()"><i class="fa fa-times" aria-hidden="true"></i></div>
-        <div class="menu-wrapper">
-            <div class="menu-list menu-home"><a href="https://www.kokatto.com/">Home</a></div>
-            <div class="menu-list menu-products"><a href="https://www.kokatto.com/products">Products</a></div>
-            <div class="menu-list menu-services"><a href="https://www.kokatto.com/services">Services</a></div>
-            <div class="menu-list menu-team"><a href="https://www.kokatto.com/team">Team</a></div>
-            <div class="menu-list menu-career"><a href="https://www.kokatto.com/career">Career</a></div>
-            <div class="menu-list menu-contact"><a href="https://www.kokatto.com/contact">Contact</a></div>
-        </div>
-        <div class="menu-social-wrapper">
-            
-                
+        <div class="navigation-section default">
+            <div class="navigation-wrapper">
+                <div class="close-nagivation-wrapper" onclick="closeMenu()"><i class="fa fa-times" aria-hidden="true"></i></div>
+                <div class="menu-wrapper">
+                    <div class="menu-list menu-home"><a href="https://www.kokatto.com/">Home</a></div>
+                    <div class="menu-list menu-products"><a href="https://www.kokatto.com/products">Products</a></div>
+                    <div class="menu-list menu-services"><a href="https://www.kokatto.com/services">Services</a></div>
+                    <div class="menu-list menu-team"><a href="https://www.kokatto.com/team">Team</a></div>
+                    <div class="menu-list menu-career"><a href="https://www.kokatto.com/career">Career</a></div>
+                    <div class="menu-list menu-contact"><a href="https://www.kokatto.com/contact">Contact</a></div>
+                </div>
+                <div class="menu-social-wrapper">
+                    
+                    
                     <a href="https://www.instagram.com/kokatto/" target="_blank"><img class="img-responsive" src="https://www.kokatto.com/images/uploads/global/social-instagram.png"></a>  
-                
+                    
                     <a href="https://www.youtube.com/watch?v=1fx65pwyHbY" target="_blank"><img class="img-responsive" src="https://www.kokatto.com/images/uploads/global/social-youtube.png"></a>   
-                
+                    
                     <a href="https://www.linkedin.com/company/kokatto" target="_blank"><img class="img-responsive" src="https://www.kokatto.com/images/uploads/global/social-linkedin.png"></a> 
-                
-            
+                    
+                    
+                </div>
+            </div>
         </div>
-    </div>
-</div>
 
-<script>
-    function showMenu(){
-        $(".navigation-section").removeClass("close-menu default").addClass("active-menu");
-    }
+        <script>
+        function showMenu(){
+            $(".navigation-section").removeClass("close-menu default").addClass("active-menu");
+        }
 
-    function closeMenu(){
-        $(".navigation-section").removeClass("active-menu default").addClass("close-menu");
-    }
-    
-    if("services"==""){$(".menu-home").addClass("active");}else{$(".menu-services").addClass("active");}
-    console.log(".menu-list-services");
-    
-    
+        function closeMenu(){
+            $(".navigation-section").removeClass("active-menu default").addClass("close-menu");
+        }
+        
+        if("services"==""){$(".menu-home").addClass("active");}else{$(".menu-services").addClass("active");}
+        console.log(".menu-list-services");
+        
+        
 
-    $(document).click(function(e){
-        console.log(e.target);
-        if($(e).is('.open-menu-wrapper') ) {
+        $(document).click(function(e){
+            console.log(e.target);
+            if($(e).is('.open-menu-wrapper') ) {
             //closeMenu();
             console.log(e.target);
         }
     })
 </script>
 
-        <content>
-            
+<content>
+    
 
     
-        <div class="services-header header-page-wrapper text-center" style="background: linear-gradient(to right, RGBA(0, 0, 0, 0.5), RGBA(0, 0, 0, 0.5)), url(https://www.kokatto.com/images/uploads/global/image_10.png) no-repeat center center; background-size: cover;">
-            <div class="header-page">
-                <div class="header-page-title">
-                    <p>Where Your Ideas Evolve </p>
+    <div class="services-header header-page-wrapper text-center" style="background: linear-gradient(to right, RGBA(0, 0, 0, 0.5), RGBA(0, 0, 0, 0.5)), url(https://www.kokatto.com/images/uploads/global/image_10.png) no-repeat center center; background-size: cover;">
+        <div class="header-page">
+            <div class="header-page-title">
+                <p>Where Your Ideas Evolve </p>
 
-<p>Into Product</p>                 
-                </div>
+                <p>Into Product</p>                 
+            </div>
                 <!-- <div class="header-page-info text-center">
                     In Kokatto, we understand the difficulty companies face in delivering their messages successfully to their customers. From a humble beginning in early 2014, we embarked on a journey to solve this problem. And now our clients enjoy a more effective and efficient way of communicating their messages across. Say hello, to the future of notifications!
                 </div> -->
@@ -137,63 +137,63 @@
                 </div>
             </div>  
         </div>
-    
+        
 
 
-    <div class="services-products-speciality-section">
-        <div class="container">
-            <div class="row homepage-team-title-wrapper">
-                <div class="col-md-3 no-padding-desktop speciality-slider-pager-container">
-                    <div class="title-3">
-                        Our Speciality<br/>
-                        Services
+        <div class="services-products-speciality-section">
+            <div class="container">
+                <div class="row homepage-team-title-wrapper">
+                    <div class="col-md-3 no-padding-desktop speciality-slider-pager-container">
+                        <div class="title-3">
+                            Our Speciality<br/>
+                            Services
+                        </div>
+                        <div>
+                            <span id="speciality-pager-prev" class="speciality-pager-wrapper"></span>
+                            <span id="speciality-pager-next" class="speciality-pager-wrapper"></span>
+                        </div>
                     </div>
-                    <div>
-                        <span id="speciality-pager-prev" class="speciality-pager-wrapper"></span>
-                        <span id="speciality-pager-next" class="speciality-pager-wrapper"></span>
-                    </div>
-                </div>
-                <div class="col-md-offset-1 col-md-8 no-padding speciality-slider-container">
-                    <div class="col-md-offset-2 col-md-8 no-padding">
-                        <div id="speciality-wraper">
-                            
+                    <div class="col-md-offset-1 col-md-8 no-padding speciality-slider-container">
+                        <div class="col-md-offset-2 col-md-8 no-padding">
+                            <div id="speciality-wraper">
+                                
                                 <div class="speciality-list" data-slide="0">
                                     <div class="speciality-list-icon"><img src="https://www.kokatto.com/images/uploads/global/api.png" class="img-responsive"></div>
                                     <div class="speciality-list-name">API based Development</div>
                                     <div class="speciality-list-description"><p>We develop API based application for you to easily access and analyze your data</p></div>
                                 </div>
-                            
+                                
                                 <div class="speciality-list" data-slide="1">
                                     <div class="speciality-list-icon"><img src="https://www.kokatto.com/images/uploads/global/mobile-app-developing.png" class="img-responsive"></div>
                                     <div class="speciality-list-name">Mobile Application Development</div>
                                     <div class="speciality-list-description"><p>We are experts in Mobile Application Development (Android &amp; iOS)</p></div>
                                 </div>
-                            
+                                
                                 <div class="speciality-list" data-slide="2">
                                     <div class="speciality-list-icon"><img src="https://www.kokatto.com/images/uploads/global/consult.png" class="img-responsive"></div>
                                     <div class="speciality-list-name">Tech Consultancy Services</div>
                                     <div class="speciality-list-description"><p>​Professional Technology Consultant Services, including IBM and AWS</p></div>
                                 </div>
-                            
+                                
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
 
 
 
 
-<div class="services-products-list-section">
-    <div class="container">
-        <div class="title-1 text-center">
-            Here Are Some Of Our<br/>
-            Highlighted Project
-        </div>
+        <div class="services-products-list-section">
+            <div class="container">
+                <div class="title-1 text-center">
+                    Here Are Some Of Our<br/>
+                    Highlighted Project
+                </div>
 
-        
-            
+                
+                
                 <div class="row services-list" data-id="8" data-aos="fade-left">
                     <div class="col-md-6 no-padding services-list-image">
                         <img class="img-responsive" src="https://www.kokatto.com/images/uploads/services/Unilever.jpg">
@@ -217,28 +217,28 @@
                         </div>
                         <div class="services-project-technology-used-list">
                             
-                                
-                                    <span class="services-project-technology-used"><img src="https://www.kokatto.com/images/uploads/services/net-logo_rsz.png"></span>
-                                
                             
-                                
-                                    <span class="services-project-technology-used"><img src="https://www.kokatto.com/images/uploads/services/rsz_microsoft-sql-server-logo-png-11536003314pm60goufi1.png"></span>
-                                
+                            <span class="services-project-technology-used"><img src="https://www.kokatto.com/images/uploads/services/net-logo_rsz.png"></span>
                             
-                                
-                                    <span class="services-project-technology-used"><img src="https://www.kokatto.com/images/uploads/services/rsz_windows-server-logo.png"></span>
-                                
                             
-                                
-                                    <span class="services-project-technology-used"><img src="https://www.kokatto.com/images/uploads/services/image_5.png"></span>
-                                
+                            
+                            <span class="services-project-technology-used"><img src="https://www.kokatto.com/images/uploads/services/rsz_microsoft-sql-server-logo-png-11536003314pm60goufi1.png"></span>
+                            
+                            
+                            
+                            <span class="services-project-technology-used"><img src="https://www.kokatto.com/images/uploads/services/rsz_windows-server-logo.png"></span>
+                            
+                            
+                            
+                            <span class="services-project-technology-used"><img src="https://www.kokatto.com/images/uploads/services/image_5.png"></span>
+                            
                             
                         </div>
                     </div>
                 </div>
-            
-        
-            
+                
+                
+                
                 <div class="row services-list" data-id="65" data-aos="fade-right">
                     <div class="col-md-6 no-padding services-list-image float-right-desktop">
                         <img class="img-responsive" src="https://www.kokatto.com/images/uploads/services/BTN.jpg">
@@ -262,20 +262,20 @@
                         </div>
                         <div class="services-project-technology-used-list">
                             
-                                
-                                    <span class="services-project-technology-used"><img src="https://www.kokatto.com/images/uploads/services/image_5.png"></span>
-                                
                             
-                                
-                                    <span class="services-project-technology-used"><img src="https://www.kokatto.com/images/uploads/services/image_3.png"></span>
-                                
+                            <span class="services-project-technology-used"><img src="https://www.kokatto.com/images/uploads/services/image_5.png"></span>
+                            
+                            
+                            
+                            <span class="services-project-technology-used"><img src="https://www.kokatto.com/images/uploads/services/image_3.png"></span>
+                            
                             
                         </div>
                     </div>
                 </div>
-            
-        
-            
+                
+                
+                
                 <div class="row services-list" data-id="71" data-aos="fade-left">
                     <div class="col-md-6 no-padding services-list-image">
                         <img class="img-responsive" src="https://www.kokatto.com/images/uploads/services/SystemZ.png">
@@ -299,24 +299,24 @@
                         </div>
                         <div class="services-project-technology-used-list">
                             
-                                
-                                    <span class="services-project-technology-used"><img src="https://www.kokatto.com/images/uploads/services/rsz_logo_zos.png"></span>
-                                
                             
-                                
-                                    <span class="services-project-technology-used"><img src="https://www.kokatto.com/images/uploads/services/rsz_transparent_ibm_cics_logo_1.png"></span>
-                                
+                            <span class="services-project-technology-used"><img src="https://www.kokatto.com/images/uploads/services/rsz_logo_zos.png"></span>
                             
-                                
-                                    <span class="services-project-technology-used"><img src="https://www.kokatto.com/images/uploads/services/rsz_1280px-tivoli_software_logo.png"></span>
-                                
+                            
+                            
+                            <span class="services-project-technology-used"><img src="https://www.kokatto.com/images/uploads/services/rsz_transparent_ibm_cics_logo_1.png"></span>
+                            
+                            
+                            
+                            <span class="services-project-technology-used"><img src="https://www.kokatto.com/images/uploads/services/rsz_1280px-tivoli_software_logo.png"></span>
+                            
                             
                         </div>
                     </div>
                 </div>
-            
-        
-            
+                
+                
+                
                 <div class="row services-list" data-id="47" data-aos="fade-right">
                     <div class="col-md-6 no-padding services-list-image float-right-desktop">
                         <img class="img-responsive" src="https://www.kokatto.com/images/uploads/services/Ponimu.jpg">
@@ -340,36 +340,36 @@
                         </div>
                         <div class="services-project-technology-used-list">
                             
-                                
-                                    <span class="services-project-technology-used"><img src="https://www.kokatto.com/images/uploads/services/image_14.1.png"></span>
-                                
                             
-                                
-                                    <span class="services-project-technology-used"><img src="https://www.kokatto.com/images/uploads/services/kotlin_logo_64.png"></span>
-                                
+                            <span class="services-project-technology-used"><img src="https://www.kokatto.com/images/uploads/services/image_14.1.png"></span>
                             
-                                
-                                    <span class="services-project-technology-used"><img src="https://www.kokatto.com/images/uploads/services/vuejs_logo_64.png"></span>
-                                
                             
-                                
-                                    <span class="services-project-technology-used"><img src="https://www.kokatto.com/images/uploads/services/image_5.png"></span>
-                                
                             
-                                
-                                    <span class="services-project-technology-used"><img src="https://www.kokatto.com/images/uploads/services/rsz_spring-boot-logo.png"></span>
-                                
+                            <span class="services-project-technology-used"><img src="https://www.kokatto.com/images/uploads/services/kotlin_logo_64.png"></span>
                             
-                                
-                                    <span class="services-project-technology-used"><img src="https://www.kokatto.com/images/uploads/services/rsz_aws-logo-orig-1-1.png"></span>
-                                
+                            
+                            
+                            <span class="services-project-technology-used"><img src="https://www.kokatto.com/images/uploads/services/vuejs_logo_64.png"></span>
+                            
+                            
+                            
+                            <span class="services-project-technology-used"><img src="https://www.kokatto.com/images/uploads/services/image_5.png"></span>
+                            
+                            
+                            
+                            <span class="services-project-technology-used"><img src="https://www.kokatto.com/images/uploads/services/rsz_spring-boot-logo.png"></span>
+                            
+                            
+                            
+                            <span class="services-project-technology-used"><img src="https://www.kokatto.com/images/uploads/services/rsz_aws-logo-orig-1-1.png"></span>
+                            
                             
                         </div>
                     </div>
                 </div>
-            
-        
-            
+                
+                
+                
                 <div class="row services-list" data-id="9" data-aos="fade-left">
                     <div class="col-md-6 no-padding services-list-image">
                         <img class="img-responsive" src="https://www.kokatto.com/images/uploads/services/Foxlogger.jpg">
@@ -393,20 +393,20 @@
                         </div>
                         <div class="services-project-technology-used-list">
                             
-                                
-                                    <span class="services-project-technology-used"><img src="https://www.kokatto.com/images/uploads/services/image_5.png"></span>
-                                
                             
-                                
-                                    <span class="services-project-technology-used"><img src="https://www.kokatto.com/images/uploads/services/ionic_logo_64.png"></span>
-                                
+                            <span class="services-project-technology-used"><img src="https://www.kokatto.com/images/uploads/services/image_5.png"></span>
+                            
+                            
+                            
+                            <span class="services-project-technology-used"><img src="https://www.kokatto.com/images/uploads/services/ionic_logo_64.png"></span>
+                            
                             
                         </div>
                     </div>
                 </div>
-            
-        
-            
+                
+                
+                
                 <div class="row services-list" data-id="67" data-aos="fade-right">
                     <div class="col-md-6 no-padding services-list-image float-right-desktop">
                         <img class="img-responsive" src="https://www.kokatto.com/images/uploads/services/tez_laptop.png">
@@ -430,16 +430,16 @@
                         </div>
                         <div class="services-project-technology-used-list">
                             
-                                
-                                    <span class="services-project-technology-used"><img src="https://www.kokatto.com/images/uploads/services/image_3.png"></span>
-                                
+                            
+                            <span class="services-project-technology-used"><img src="https://www.kokatto.com/images/uploads/services/image_3.png"></span>
+                            
                             
                         </div>
                     </div>
                 </div>
-            
-        
-            
+                
+                
+                
                 <div class="row services-list" data-id="70" data-aos="fade-left">
                     <div class="col-md-6 no-padding services-list-image">
                         <img class="img-responsive" src="https://www.kokatto.com/images/uploads/services/Bringbax_572x400.jpg">
@@ -463,32 +463,32 @@
                         </div>
                         <div class="services-project-technology-used-list">
                             
-                                
-                                    <span class="services-project-technology-used"><img src="https://www.kokatto.com/images/uploads/services/image_14.1.png"></span>
-                                
                             
-                                
-                                    <span class="services-project-technology-used"><img src="https://www.kokatto.com/images/uploads/services/kotlin_logo_64.png"></span>
-                                
+                            <span class="services-project-technology-used"><img src="https://www.kokatto.com/images/uploads/services/image_14.1.png"></span>
                             
-                                
-                                    <span class="services-project-technology-used"><img src="https://www.kokatto.com/images/uploads/services/swift_logo_64.png"></span>
-                                
                             
-                                
-                                    <span class="services-project-technology-used"><img src="https://www.kokatto.com/images/uploads/services/angular_logo_final.png"></span>
-                                
                             
-                                
-                                    <span class="services-project-technology-used"><img src="https://www.kokatto.com/images/uploads/services/rsz_aws-logo-orig-1-1.png"></span>
-                                
+                            <span class="services-project-technology-used"><img src="https://www.kokatto.com/images/uploads/services/kotlin_logo_64.png"></span>
+                            
+                            
+                            
+                            <span class="services-project-technology-used"><img src="https://www.kokatto.com/images/uploads/services/swift_logo_64.png"></span>
+                            
+                            
+                            
+                            <span class="services-project-technology-used"><img src="https://www.kokatto.com/images/uploads/services/angular_logo_final.png"></span>
+                            
+                            
+                            
+                            <span class="services-project-technology-used"><img src="https://www.kokatto.com/images/uploads/services/rsz_aws-logo-orig-1-1.png"></span>
+                            
                             
                         </div>
                     </div>
                 </div>
-            
-        
-            
+                
+                
+                
                 <div class="row services-list" data-id="48" data-aos="fade-right">
                     <div class="col-md-6 no-padding services-list-image float-right-desktop">
                         <img class="img-responsive" src="https://www.kokatto.com/images/uploads/services/ONTA.jpg">
@@ -512,32 +512,32 @@
                         </div>
                         <div class="services-project-technology-used-list">
                             
-                                
-                                    <span class="services-project-technology-used"><img src="https://www.kokatto.com/images/uploads/services/image_14.1.png"></span>
-                                
                             
-                                
-                                    <span class="services-project-technology-used"><img src="https://www.kokatto.com/images/uploads/services/kotlin_logo_64.png"></span>
-                                
+                            <span class="services-project-technology-used"><img src="https://www.kokatto.com/images/uploads/services/image_14.1.png"></span>
                             
-                                
-                                    <span class="services-project-technology-used"><img src="https://www.kokatto.com/images/uploads/services/swift_logo_64.png"></span>
-                                
                             
-                                
-                                    <span class="services-project-technology-used"><img src="https://www.kokatto.com/images/uploads/services/image_5.png"></span>
-                                
                             
-                                
-                                    <span class="services-project-technology-used"><img src="https://www.kokatto.com/images/uploads/services/rsz_php_png26.png"></span>
-                                
+                            <span class="services-project-technology-used"><img src="https://www.kokatto.com/images/uploads/services/kotlin_logo_64.png"></span>
+                            
+                            
+                            
+                            <span class="services-project-technology-used"><img src="https://www.kokatto.com/images/uploads/services/swift_logo_64.png"></span>
+                            
+                            
+                            
+                            <span class="services-project-technology-used"><img src="https://www.kokatto.com/images/uploads/services/image_5.png"></span>
+                            
+                            
+                            
+                            <span class="services-project-technology-used"><img src="https://www.kokatto.com/images/uploads/services/rsz_php_png26.png"></span>
+                            
                             
                         </div>
                     </div>
                 </div>
-            
-        
-            
+                
+                
+                
                 <div class="row services-list" data-id="69" data-aos="fade-left">
                     <div class="col-md-6 no-padding services-list-image">
                         <img class="img-responsive" src="https://www.kokatto.com/images/uploads/services/buumi_laptop.png">
@@ -561,49 +561,49 @@
                         </div>
                         <div class="services-project-technology-used-list">
                             
-                                
-                                    <span class="services-project-technology-used"><img src="https://www.kokatto.com/images/uploads/services/image_3.png"></span>
-                                
+                            
+                            <span class="services-project-technology-used"><img src="https://www.kokatto.com/images/uploads/services/image_3.png"></span>
+                            
                             
                         </div>
                     </div>
                 </div>
-            
+                
+                
+
+            </div>
+        </div>
+
         
-
-    </div>
-</div>
-
-    
         <div class="services-footer header-page-wrapper text-center" style="background: linear-gradient(to right, RGBA(0, 0, 0, 0.7), RGBA(0, 0, 0, 0.8)), url(https://www.kokatto.com/images/uploads/global/image_10.png) no-repeat center center; background-size: cover;">
             <div class="header-page">
                 <div class="header-page-title">
                     <p>Already Have An Idea?<br>
- Share With Us Now.</p>
-                </div>
-                
-                <div class="kokatto-red-button" onclick="window.location.href='https://www.kokatto.com/estimate'">
+                       Share With Us Now.</p>
+                   </div>
+                   
+                   <div class="kokatto-red-button" onclick="window.location.href='https://www.kokatto.com/estimate'">
                     Get A Quote <i class="fa fa-angle-right" aria-hidden="true"></i>
                 </div>
             </div>
         </div>
-    
+        
 
 
 
-<div id="project-detail-modal" class="modal fade" role="dialog">
-    
-</div>
+        <div id="project-detail-modal" class="modal fade" role="dialog">
+            
+        </div>
 
-<script>
-    var slider;
-    $(window).on("load",function(){
-        slider=$('#speciality-wraper').bxSlider({
-            nextSelector: '#speciality-pager-next',
-            prevSelector: '#speciality-pager-prev',
-            nextText: '<i class="fa fa-angle-right" aria-hidden="true"></i>',
-            prevText: '<i class="fa fa-angle-left" aria-hidden="true"></i>',
-            pager: false,
+        <script>
+        var slider;
+        $(window).on("load",function(){
+            slider=$('#speciality-wraper').bxSlider({
+                nextSelector: '#speciality-pager-next',
+                prevSelector: '#speciality-pager-prev',
+                nextText: '<i class="fa fa-angle-right" aria-hidden="true"></i>',
+                prevText: '<i class="fa fa-angle-left" aria-hidden="true"></i>',
+                pager: false,
             //auto: true,
             mode: 'horizontal',
             speed: 1000,
@@ -613,284 +613,284 @@
             hideControlOnEnd: true,
         });
 
-        var $grid = $('.grid').masonry({
-            itemSelector: '.grid-item',
-            percentPosition: true,
-            columnWidth: '.grid-sizer',
-        });
+            var $grid = $('.grid').masonry({
+                itemSelector: '.grid-item',
+                percentPosition: true,
+                columnWidth: '.grid-sizer',
+            });
         // layout Masonry after each image loads
         $grid.imagesLoaded().progress( function() {$grid.masonry();});
     });
 
-    $(document).on("click",".services-project-view-detail .kokatto-red-button",function(){
-        $.ajax({
-            url: "https://www.kokatto.com/services/load_modal/"+$(this).closest(".services-list").attr("data-id"),
-            success: function(result){
+        $(document).on("click",".services-project-view-detail .kokatto-red-button",function(){
+            $.ajax({
+                url: "https://www.kokatto.com/services/load_modal/"+$(this).closest(".services-list").attr("data-id"),
+                success: function(result){
                 //console.log(result);
                 $("#project-detail-modal").empty().append(result);
                 $("#project-detail-modal").modal("show");
             }
         });
-        
-    });
+            
+        });
 
-    $(document).on("click",".speciality-list",function(){slider.goToSlide($(this).attr("data-slide"));});
-</script>
-        </content>
+        $(document).on("click",".speciality-list",function(){slider.goToSlide($(this).attr("data-slide"));});
+    </script>
+</content>
 
-        <footer class="footer-section">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="logo-footer-wrapper">
-                            <div class="logo-footer"><img class="img-responsive" src="https://www.kokatto.com/assets/image/logo.png"></div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-6">
-                        <div class="col-md-12 no-padding footer-tagline-section">
-                            <div class="footer-title">
-                                Let's Make Great Things!
-                            </div>
-                            <div class="footer-article">
-                                We are looking forward to grow your business with technology. If you have any question regarding your business, don’t hesitate to tell us!
-                            </div>
-                            <img class="img-responsive" src="https://www.kokatto.com/assets/image/license.png">
-                        </div>
-                        
-                            <div class="col-md-6 no-padding footer-address-section">
-                                <div class="footer-title">
-                                    Address
-                                </div>
-                                <div class="footer-article">
-                                    <p>PT Kokatto Teknologi Global<br>
- Menara Prima - 9th Floor<br>
- Mega Kuningan, Setiabudi<br>
- Jakarta Selatan - 12950</p>
-                                </div>
-                            </div>
-
-                            <div class="col-md-6 no-padding footer-contact-section">
-                                
-                                <div class="footer-title">
-                                    Contact
-                                </div>
-                                <div class="footer-article">
-                                    
-                                        P : +6221 3972 3972<br/>
-                                    
-                                        E : support@kokatto.com<br/>
-                                    
-                                </div>
-                                <div class="footer-media-social">
-                                    
-                                        <a href="https://www.instagram.com/kokatto/" target="_blank"><img class="img-responsive" src="https://www.kokatto.com/images/uploads/global/social-instagram.png"></a>
-                                    
-                                        <a href="https://www.youtube.com/watch?v=1fx65pwyHbY" target="_blank"><img class="img-responsive" src="https://www.kokatto.com/images/uploads/global/social-youtube.png"></a>
-                                    
-                                        <a href="https://www.linkedin.com/company/kokatto" target="_blank"><img class="img-responsive" src="https://www.kokatto.com/images/uploads/global/social-linkedin.png"></a>
-                                    
-                                </div>
-                            </div>
-                        
-                    </div>
-
-                    <div class="col-md-6">
-                        
-                        <form id="cform" method="post" action="https://www.kokatto.com/index.php/services"  enctype="multipart/form-data" >
-<div class='hiddenFields'>
-<input type="hidden" name="RET" value="https://www.kokatto.com/index.php/services" />
-<input type="hidden" name="URI" value="services" />
-<input type="hidden" name="return_url" value="global/send_mail" />
-<input type="hidden" name="author_id" value="1" />
-<input type="hidden" name="channel_id" value="10" />
-<input type="hidden" name="entry_id" value="0" />
-<input type="hidden" name="ACT" value="1" />
-<input type="hidden" name="meta" value="LuF1SvSSkVkNlX5GqyR4wBmKzOSWvFUnBAtGPeWL+4L1whsVbfYGz2I5tdx6Ibf7mYZG5eQvz9xnL/uzZhrPzIBVGBYUwxG7paEH8YEV60DvCHc26dwnWpfZc+Zgcw1U3RKNfsic5sEDYWNBucaPfHGpr6Gs7PI0VZe21ODqo6xtcd+odjHvdaC3+98xH5c7cclT/J610MTtUXRf2iS4rNZaVMoCsnIycVK2DDdU9mCrqntSH336Min2heSgloFIx18KA0BChjvW9uGzt546hnq3lcv5wHj1QthA4XgJNN7feL80KSPuW0APU24v2suA9CpBNBqW2/NjnMOMM1qshULrtAscMpU1cofZCkSY89KvGBXLeFJ+0f1HCEuLI4xQk7U1pGHWsFIU8Jy6gmj1Kd8j9O0KTWX2G53RisDrIoqCenoiW3wMshXifJuFhTIv" />
-<input type="hidden" name="return" value="global/send_mail" />
-<input type="hidden" name="site_id" value="1" />
-<input type="hidden" name="csrf_token" value="f8df748a4290ef1c98a47a49370d35e8b949865b" />
-</div>
-
-
-                            <form id="inquiry-form">
-                                <input type="hidden" id="title" name="title">
-                                <div class="form-group">
-                                    <input id="name" type="text" name="name" class="form-control" placeholder="Your Name (Required)" oninput="setTitle()" required>
-                                </div>
-                                <div class="form-group">
-                                    <input id="email" type="email" name="client_email" class="form-control" placeholder="Your Email (Required)" required>
-                                </div>
-                                <div class="form-group">
-                                    <input id="subject" type="text" name="subject" class="form-control" placeholder="Subject" required>
-                                </div>
-                                <div class="form-group">
-                                    <textarea id="message" name="message" class="form-control" placeholder="Your Message" rows="4" required></textarea>
-                                </div>
-                                <div class="form-group inquiry-submit-wrapper">
-                                    <button class="kokatto-red-button" onclick="">SEND MESSAGE <i class="fa fa-angle-right" aria-hidden="true"></i></button>
-                                </div>
-                            </form>
-                        </form>
-                        
-                    </div>
+<footer class="footer-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="logo-footer-wrapper">
+                    <div class="logo-footer"><img class="img-responsive" src="https://www.kokatto.com/assets/image/logo.png"></div>
                 </div>
             </div>
 
-        </footer>
-        <div class="copyright-section text-center">
-            Copyright 2019 by Kokatto. All Rights Reserved
+            <div class="col-md-6">
+                <div class="col-md-12 no-padding footer-tagline-section">
+                    <div class="footer-title">
+                        Let's Make Great Things!
+                    </div>
+                    <div class="footer-article">
+                        We are looking forward to grow your business with technology. If you have any question regarding your business, don’t hesitate to tell us!
+                    </div>
+                    <img class="img-responsive" src="https://www.kokatto.com/assets/image/license.png">
+                </div>
+                
+                <div class="col-md-6 no-padding footer-address-section">
+                    <div class="footer-title">
+                        Address
+                    </div>
+                    <div class="footer-article">
+                        <p>PT Kokatto Teknologi Global<br>
+                           Menara Prima - 9th Floor<br>
+                           Mega Kuningan, Setiabudi<br>
+                           Jakarta Selatan - 12950</p>
+                       </div>
+                   </div>
+
+                   <div class="col-md-6 no-padding footer-contact-section">
+                    
+                    <div class="footer-title">
+                        Contact
+                    </div>
+                    <div class="footer-article">
+                        
+                        P : +6221 3972 3972<br/>
+                        
+                        E : support@kokatto.com<br/>
+                        
+                    </div>
+                    <div class="footer-media-social">
+                        
+                        <a href="https://www.instagram.com/kokatto/" target="_blank"><img class="img-responsive" src="https://www.kokatto.com/images/uploads/global/social-instagram.png"></a>
+                        
+                        <a href="https://www.youtube.com/watch?v=1fx65pwyHbY" target="_blank"><img class="img-responsive" src="https://www.kokatto.com/images/uploads/global/social-youtube.png"></a>
+                        
+                        <a href="https://www.linkedin.com/company/kokatto" target="_blank"><img class="img-responsive" src="https://www.kokatto.com/images/uploads/global/social-linkedin.png"></a>
+                        
+                    </div>
+                </div>
+                
+            </div>
+
+            <div class="col-md-6">
+                
+                <form id="cform" method="post" action="https://www.kokatto.com/index.php/services"  enctype="multipart/form-data" >
+                    <div class='hiddenFields'>
+                        <input type="hidden" name="RET" value="https://www.kokatto.com/index.php/services" />
+                        <input type="hidden" name="URI" value="services" />
+                        <input type="hidden" name="return_url" value="global/send_mail" />
+                        <input type="hidden" name="author_id" value="1" />
+                        <input type="hidden" name="channel_id" value="10" />
+                        <input type="hidden" name="entry_id" value="0" />
+                        <input type="hidden" name="ACT" value="1" />
+                        <input type="hidden" name="meta" value="LuF1SvSSkVkNlX5GqyR4wBmKzOSWvFUnBAtGPeWL+4L1whsVbfYGz2I5tdx6Ibf7mYZG5eQvz9xnL/uzZhrPzIBVGBYUwxG7paEH8YEV60DvCHc26dwnWpfZc+Zgcw1U3RKNfsic5sEDYWNBucaPfHGpr6Gs7PI0VZe21ODqo6xtcd+odjHvdaC3+98xH5c7cclT/J610MTtUXRf2iS4rNZaVMoCsnIycVK2DDdU9mCrqntSH336Min2heSgloFIx18KA0BChjvW9uGzt546hnq3lcv5wHj1QthA4XgJNN7feL80KSPuW0APU24v2suA9CpBNBqW2/NjnMOMM1qshULrtAscMpU1cofZCkSY89KvGBXLeFJ+0f1HCEuLI4xQk7U1pGHWsFIU8Jy6gmj1Kd8j9O0KTWX2G53RisDrIoqCenoiW3wMshXifJuFhTIv" />
+                        <input type="hidden" name="return" value="global/send_mail" />
+                        <input type="hidden" name="site_id" value="1" />
+                        <input type="hidden" name="csrf_token" value="f8df748a4290ef1c98a47a49370d35e8b949865b" />
+                    </div>
+
+
+                    <form id="inquiry-form">
+                        <input type="hidden" id="title" name="title">
+                        <div class="form-group">
+                            <input id="name" type="text" name="name" class="form-control" placeholder="Your Name (Required)" oninput="setTitle()" required>
+                        </div>
+                        <div class="form-group">
+                            <input id="email" type="email" name="client_email" class="form-control" placeholder="Your Email (Required)" required>
+                        </div>
+                        <div class="form-group">
+                            <input id="subject" type="text" name="subject" class="form-control" placeholder="Subject" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" class="form-control" placeholder="Your Message" rows="4" required></textarea>
+                        </div>
+                        <div class="form-group inquiry-submit-wrapper">
+                            <button class="kokatto-red-button" onclick="">SEND MESSAGE <i class="fa fa-angle-right" aria-hidden="true"></i></button>
+                        </div>
+                    </form>
+                </form>
+                
+            </div>
         </div>
-        <a class="back-to-top"><i class="fa fa-angle-up"></i></a>
     </div>
 
-    <script>
-        $(window).on("load",function(){AOS.init();});   
-        
-        
-        function setTitle(){
-            var counter = 1;
-             
-              
-                counter = 1+1;
-              
-            
-              
-                counter = 2+1;
-              
-            
-              
-                counter = 3+1;
-              
-            
-              
-                counter = 4+1;
-              
-            
-              
-                counter = 5+1;
-              
-            
-              
-                counter = 6+1;
-              
-            
-              
-                counter = 7+1;
-              
-            
-              
-                counter = 8+1;
-              
-            
-              
-                counter = 9+1;
-              
-            
-              
-                counter = 10+1;
-              
-            
-              
-                counter = 11+1;
-              
-            
-              
-                counter = 12+1;
-              
-            
-              
-                counter = 13+1;
-              
-            
-              
-                counter = 14+1;
-              
-            
-              
-                counter = 15+1;
-              
-            
-              
-                counter = 16+1;
-              
-            
-              
-                counter = 17+1;
-              
-            
-              
-                counter = 18+1;
-              
-            
-              
-                counter = 19+1;
-              
-            
-              
-                counter = 20+1;
-              
-            
-              
-                counter = 21+1;
-              
-            
-              
-                counter = 22+1;
-              
-            
-              
-                counter = 23+1;
-              
-            
-              
-                counter = 24+1;
-              
-            
-              
-                counter = 25+1;
-              
-            
-              
-                counter = 26+1;
-              
-            
-              
-                counter = 27+1;
-              
-            
-              
-                counter = 28+1;
-              
-            
-              
-                counter = 29+1;
-              
-            
-              
-                counter = 30+1;
-              
-            
-              
-                counter = 31+1;
-              
-            
-              
-                counter = 32+1;
-              
-            
-            $("#title").attr("value",counter+"-"+$("#name").val());
-            console.log($("#title").val());
-         }
-         
-         $('.back-to-top').click(function() {
-            $("html, body").animate({scrollTop: 0}, 1000);
-         });
-         
-         $(window).scroll(function (event) {
-            if( $(window).scrollTop() > $(window).height()+100 ){$(".back-to-top").fadeIn(500);}else{$(".back-to-top").fadeOut(500);}
-         });
-    </script>
+</footer>
+<div class="copyright-section text-center">
+    Copyright 2019 by Kokatto. All Rights Reserved
+</div>
+<a class="back-to-top"><i class="fa fa-angle-up"></i></a>
+</div>
+
+<script>
+$(window).on("load",function(){AOS.init();});   
+
+
+function setTitle(){
+    var counter = 1;
+    
+    
+    counter = 1+1;
+    
+    
+    
+    counter = 2+1;
+    
+    
+    
+    counter = 3+1;
+    
+    
+    
+    counter = 4+1;
+    
+    
+    
+    counter = 5+1;
+    
+    
+    
+    counter = 6+1;
+    
+    
+    
+    counter = 7+1;
+    
+    
+    
+    counter = 8+1;
+    
+    
+    
+    counter = 9+1;
+    
+    
+    
+    counter = 10+1;
+    
+    
+    
+    counter = 11+1;
+    
+    
+    
+    counter = 12+1;
+    
+    
+    
+    counter = 13+1;
+    
+    
+    
+    counter = 14+1;
+    
+    
+    
+    counter = 15+1;
+    
+    
+    
+    counter = 16+1;
+    
+    
+    
+    counter = 17+1;
+    
+    
+    
+    counter = 18+1;
+    
+    
+    
+    counter = 19+1;
+    
+    
+    
+    counter = 20+1;
+    
+    
+    
+    counter = 21+1;
+    
+    
+    
+    counter = 22+1;
+    
+    
+    
+    counter = 23+1;
+    
+    
+    
+    counter = 24+1;
+    
+    
+    
+    counter = 25+1;
+    
+    
+    
+    counter = 26+1;
+    
+    
+    
+    counter = 27+1;
+    
+    
+    
+    counter = 28+1;
+    
+    
+    
+    counter = 29+1;
+    
+    
+    
+    counter = 30+1;
+    
+    
+    
+    counter = 31+1;
+    
+    
+    
+    counter = 32+1;
+    
+    
+    $("#title").attr("value",counter+"-"+$("#name").val());
+    console.log($("#title").val());
+}
+
+$('.back-to-top').click(function() {
+    $("html, body").animate({scrollTop: 0}, 1000);
+});
+
+$(window).scroll(function (event) {
+    if( $(window).scrollTop() > $(window).height()+100 ){$(".back-to-top").fadeIn(500);}else{$(".back-to-top").fadeOut(500);}
+});
+</script>
 
 </body>
 </html>
